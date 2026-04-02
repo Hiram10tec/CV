@@ -155,6 +155,8 @@ const timelineItems = [
   },
 ] as const;
 
+const timelineBulletKeys = ["bullet1", "bullet2", "bullet3", "bullet4", "bullet5"] as const;
+
 const projectItems = [
   {
     id: "altertex",
@@ -299,7 +301,7 @@ export function getPortfolioContent(locale: Locale): PortfolioContent {
         location: t(`timeline.items.${item.id}.location`),
         period: t(`timeline.items.${item.id}.period`),
         summary: t(`timeline.items.${item.id}.summary`),
-        bullets: [1, 2, 3, 4, 5].map((index) => t(`timeline.items.${item.id}.bullet${index}`)),
+        bullets: timelineBulletKeys.map((bulletKey) => t(`timeline.items.${item.id}.${bulletKey}`)),
         stack: [...item.stack],
       })),
     },
