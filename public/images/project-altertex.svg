@@ -1,0 +1,19 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="40" fill="#091120"/>
+  <rect x="48" y="48" width="1104" height="704" rx="30" fill="#0C1830" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="112" y="112" width="320" height="576" rx="24" fill="#0A1325" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="480" y="112" width="608" height="170" rx="24" fill="#0A1325" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="480" y="320" width="288" height="176" rx="24" fill="#13284A"/>
+  <rect x="800" y="320" width="288" height="176" rx="24" fill="#101A2B" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="480" y="528" width="608" height="160" rx="24" fill="#101A2B" stroke="rgba(255,255,255,0.08)"/>
+  <circle cx="198" cy="198" r="14" fill="#60A5FA"/>
+  <circle cx="240" cy="198" r="14" fill="#C084FC" fill-opacity="0.65"/>
+  <circle cx="282" cy="198" r="14" fill="#F8FAFC" fill-opacity="0.22"/>
+  <path d="M182 286H360" stroke="#1D4ED8" stroke-width="16" stroke-linecap="round"/>
+  <path d="M182 336H320" stroke="#E2E8F0" stroke-opacity="0.32" stroke-width="12" stroke-linecap="round"/>
+  <path d="M182 384H350" stroke="#E2E8F0" stroke-opacity="0.2" stroke-width="12" stroke-linecap="round"/>
+  <rect x="182" y="450" width="178" height="136" rx="22" fill="#0F2340" stroke="rgba(96,165,250,0.35)"/>
+  <path d="M552 188H1004" stroke="#E2E8F0" stroke-opacity="0.15" stroke-width="14" stroke-linecap="round"/>
+  <path d="M552 234H940" stroke="#60A5FA" stroke-opacity="0.75" stroke-width="14" stroke-linecap="round"/>
+  <text x="110" y="92" fill="#7DD3FC" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="5">ALTERTEX</text>
+</svg>

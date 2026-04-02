@@ -1,0 +1,201 @@
+{
+  "metadata": {
+    "title": "Hiram Mendoza | Portfolio",
+    "description": "Portfolio von Hiram Mendoza, Informatikingenieur-Student mit Fokus auf Architektur, Full-Stack-Entwicklung und Softwarequalität."
+  },
+  "nav": {
+    "about": "Profil",
+    "timeline": "Werdegang",
+    "projects": "Projekte",
+    "skills": "Skills",
+    "education": "Ausbildung",
+    "contact": "Kontakt",
+    "cta": "Kontakt",
+    "languageLabel": "Sprache"
+  },
+  "hero": {
+    "tagline": "Architektur, Umsetzung und Produktdenken.",
+    "title": "Student der Computertechnik und Full-Stack-Entwickler",
+    "subtitle": "Ich entwickle akademische und praxisnahe Softwareprojekte mit klarer Struktur, sicherer Backend-Logik und Interfaces, die auch unter realen Anforderungen verständlich bleiben.",
+    "availability": "Offen für Praktika, Einstiegspositionen und projektbasierte Zusammenarbeit.",
+    "location": "Queretaro, Mexiko",
+    "profile": "Profil",
+    "snapshot": "Überblick",
+    "quickNote": "Fokus auf Softwarearchitektur, Full-Stack-Umsetzung und disziplinierte Engineering-Praktiken.",
+    "viewProjects": "Projekte ansehen",
+    "openCv": "CV öffnen",
+    "contactMe": "Kontakt"
+  },
+  "stats": {
+    "endToEndDelivery": "End-to-end-Umsetzung",
+    "germanLevel": "Deutschniveau",
+    "englishLevel": "Englischniveau",
+    "architectureApproaches": "Architekturansätze angewendet"
+  },
+  "about": {
+    "eyebrow": "Profil",
+    "title": "Ich arbeite am besten dort, wo Architektur, Umsetzung und Qualität gleichzeitig wichtig sind.",
+    "description": "Ich bin Student der Computertechnik mit praktischer Erfahrung in Backend-Services, Frontend-Entwicklung, Softwarearchitektur und qualitätsorientierter Umsetzung. Meine stärksten Projekte entstanden im akademischen Umfeld, wurden aber mit professionellem Anspruch umgesetzt.",
+    "focusLabel": "Aktueller Fokus",
+    "imageBadge": "Technisches Profil",
+    "imageCaptionTitle": "Was ich mitbringe",
+    "imageCaptionText": "Klare technische Argumentation, strukturierte Umsetzung und die Disziplin, das Gelieferte zu dokumentieren und zu validieren.",
+    "pills": {
+      "fullStackDevelopment": "Full-Stack-Entwicklung",
+      "softwareArchitecture": "Softwarearchitektur",
+      "apiDesign": "API-Design",
+      "qualityPractices": "Qualitätspraktiken"
+    },
+    "cards": {
+      "architectureMindset": {
+        "title": "Architektur-Denken",
+        "description": "Ich nutze Struktur, um Komplexität zu reduzieren, nicht um das Projekt künstlich aufzublähen."
+      },
+      "executionAcrossLayers": {
+        "title": "Umsetzung über mehrere Ebenen",
+        "description": "Ich kann zwischen UI, Backend-Logik, Validierung und Datenbankdesign sicher wechseln."
+      },
+      "qualityOrientation": {
+        "title": "Qualitätsorientierung",
+        "description": "Ich arbeite mit Reviews, Standards und Dokumentation, damit Projekte nach der Abgabe wartbar bleiben."
+      },
+      "professionalGrowth": {
+        "title": "Berufliche Entwicklung",
+        "description": "Ich suche Teams, in denen ich früh beitragen und mein technisches Niveau schnell weiter steigern kann."
+      }
+    }
+  },
+  "timeline": {
+    "eyebrow": "Werdegang",
+    "title": "Wie ich Projekte von Anforderungen bis zur Lieferung umgesetzt habe.",
+    "description": "Das sind die stärksten Projekte meines Portfolios. Dieser Bereich zeigt Verantwortlichkeiten, Prozess und technische Entscheidungen, nicht nur Endergebnisse.",
+    "stackLabel": "Stack",
+    "items": {
+      "altertex": {
+        "company": "Altertex modulares Enterprise-System",
+        "role": "Softwarearchitekt und Full-Stack-Entwickler",
+        "location": "Queretaro, Mexiko",
+        "period": "Feb 2025 - Jun 2025",
+        "summary": "Ein groß angelegtes akademisches Enterprise-Projekt, umgesetzt mit CMMI-orientierten Prozessen und einem Liefermodell, das professionelle Softwarearbeit simulierte.",
+        "bullet1": "Ich entwarf die Lösung mit Hexagonaler Architektur und Clean Architecture, um Modularität und Wartbarkeit sicherzustellen.",
+        "bullet2": "Ich entwickelte Backend-Services, Datenmodelle und Frontend-Module für Benutzer, Rollen, Kategorien, Quoten und Produktabläufe.",
+        "bullet3": "Ich implementierte Berechtigungskontrolle, Validierungsregeln und sicherheitsorientiertes API-Verhalten.",
+        "bullet4": "Ich arbeitete mit formaler Dokumentation, strukturierten Reviews und Qualitätskontrollen im gesamten Projekt.",
+        "bullet5": "Ich übernahm früh eine Führungsrolle, um Neuabschätzungen und die Abstimmung mit dem externen Trainingspartner zu unterstützen."
+      },
+      "wushu": {
+        "company": "App der Queretaro Wushu Kung Fu Association",
+        "role": "Full-Stack-Entwickler für iOS-Auslieferung",
+        "location": "Queretaro, Mexiko",
+        "period": "Sep 2024 - Dez 2024",
+        "summary": "Ein Mobile-Projekt mit Fokus auf Analyse, Architektur, Implementierung, Tests und Vorbereitung der iOS-Auslieferung.",
+        "bullet1": "Ich analysierte funktionale und nicht-funktionale Anforderungen vor der Implementierung.",
+        "bullet2": "Ich entwarf die mobile Architektur mit MVVM für Skalierbarkeit und klare Verantwortlichkeiten.",
+        "bullet3": "Ich implementierte SwiftUI-Views und App-Flows mit Blick auf Nutzbarkeit und Performance.",
+        "bullet4": "Ich validierte das Produkt durch Tests und iterative Verbesserungen in einem Scrum-Workflow.",
+        "bullet5": "Ich bereitete die Anwendung für die Auslieferung vor und behielt Qualität und Sicherheit im Blick."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Projekte",
+    "title": "Ausgewählte Arbeiten und die Ergebnisse dahinter.",
+    "description": "",
+    "badge": "Ausgewähltes Projekt",
+    "resultLabel": "Ergebnis",
+    "highlightLabel": "Warum es relevant ist",
+    "items": {
+      "altertex": {
+        "title": "Altertex Enterprise-Plattform",
+        "description": "Ein modulares Verwaltungssystem mit Fokus auf Wartbarkeit, Berechtigungskontrolle und sichere Geschäftsabläufe.",
+        "result": "Geliefert wurden Enterprise-Module für Benutzer, Rollen, Quoten, Kategorien, Produkte und geschützte Admin-Flows.",
+        "highlight": "Das stärkste Beispiel dafür, wie ich Architektur und Qualitätspraktiken in einem Projekt zusammenführe."
+      },
+      "wushu": {
+        "title": "Wushu iOS-App",
+        "description": "Eine iOS-App, geplant von Anforderungen über Architektur und UI bis zu Tests und Auslieferungsreife.",
+        "result": "Entstandene MVVM-basierte Mobile-Erfahrung mit sauberer und skalierbarer Feature-Struktur.",
+        "highlight": "Zeigt, dass ich von der Analyse bis zur mobilen Auslieferung arbeiten kann, nicht nur an Oberflächen."
+      },
+      "workflow": {
+        "title": "Architekturgetriebener Workflow",
+        "description": "Eine wiederverwendbare Arbeitsweise, die Architekturentscheidungen, Dokumentation, Codequalität und Umsetzung verbindet.",
+        "result": "Half dabei, Projekte über Frontend, Backend, Validierung und Review-Prozesse hinweg strukturiert zu halten.",
+        "highlight": "Kein separates Produkt, sondern die Ebene, die bestimmt, wie ich jedes Projekt aufbaue."
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "title": "Technische Bereiche, in denen ich vom ersten Tag an beitragen kann.",
+    "description": "Das Ziel hier ist Klarheit: woran ich arbeiten kann, welche Tools ich bereits nutze und wie diese Skills mit realer Umsetzung verbunden sind.",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "data": "Daten",
+      "architectureQuality": "Architektur und Qualität"
+    }
+  },
+  "education": {
+    "eyebrow": "Ausbildung",
+    "title": "Akademische Ausbildung mit lokaler Tiefe und internationaler Perspektive.",
+    "description": "Mein akademischer Weg verbindet eine starke ingenieurwissenschaftliche Basis in Mexiko mit einem Austausch in den Niederlanden.",
+    "badge": "Akademische Phase",
+    "items": {
+      "tec": {
+        "institution": "Tecnológico de Monterrey",
+        "degree": "Bachelor in Computer Engineering",
+        "location": "Queretaro, Mexiko",
+        "period": "Aug 2022 - Heute",
+        "description": "Ausbildung in Software Engineering, Systemdenken, Architektur, Implementierung und formaler Projektdurchführung."
+      },
+      "twente": {
+        "institution": "University of Twente",
+        "degree": "Akademischer Austausch in Computer Engineering",
+        "location": "Enschede, Niederlande",
+        "period": "Aug 2025 - Feb 2026",
+        "description": "Internationale akademische Erfahrung, die Anpassungsfähigkeit, Selbstständigkeit und Arbeit in multikulturellen Kontexten gestärkt hat."
+      }
+    }
+  },
+  "philosophy": {
+    "eyebrow": "Ansatz",
+    "title": "Die Prinzipien hinter meiner Arbeitsweise in der Softwareentwicklung.",
+    "item1": "Architektur soll praktisch bleiben und direkt mit der Lieferung verbunden sein.",
+    "item2": "Klarheit in Code, Interfaces und Kommunikation hat Vorrang.",
+    "item3": "Qualitätsprozesse sollen das Tempo schützen, nicht Teams ausbremsen.",
+    "item4": "Lösungen sollen auch nach dem ersten Release wartbar bleiben."
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Wenn dein Team jemanden braucht, der schnell lernt und sauber umsetzt, lass uns sprechen.",
+    "description": "Besonders interessieren mich Praktika, Einstiegsrollen und Teams, die saubere Umsetzung, Architektur und Produktqualität schätzen.",
+    "basedIn": "Standort",
+    "availabilityCard": "Verfügbar für Praktika, Einstiegspositionen und technische Zusammenarbeit.",
+    "quickLabel": "Passend für",
+    "quickText": "Backend-, Full-Stack- und architekturorientierte Rollen, in denen ich diszipliniert beitragen und schnell wachsen kann.",
+    "links": {
+      "email": {
+        "label": "E-Mail",
+        "note": "Der beste Kanal für Chancen, Praktika oder direkten Kontakt."
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "note": "Berufliches Profil, Hintergrund und akademische Projekterfahrung."
+      },
+      "phone": {
+        "label": "Telefon",
+        "note": "Geeignet für Interviews und direkte Gespräche zu Rollen."
+      },
+      "instagram": {
+        "label": "Instagram",
+        "note": "Ein persönlicherer Kanal mit Alltagseinblicken und kreativem Kontext."
+      }
+    }
+  },
+  "footer": {
+    "builtWith": "Erstellt mit Next.js, Tailwind CSS, Motion und GSAP.",
+    "email": "E-Mail"
+  }
+}

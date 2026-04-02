@@ -1,0 +1,201 @@
+{
+  "metadata": {
+    "title": "Hiram Mendoza | Portfolio",
+    "description": "Portfolio of Hiram Mendoza, computer engineering student focused on architecture, full stack development, and software quality."
+  },
+  "nav": {
+    "about": "About Me",
+    "timeline": "Timeline",
+    "projects": "Projects",
+    "skills": "Skills",
+    "education": "Education",
+    "contact": "Contact",
+    "cta": "Let's talk",
+    "languageLabel": "Language"
+  },
+  "hero": {
+    "tagline": "Architecture, execution, and product thinking.",
+    "title": "Computer Engineering Student and Full Stack Developer",
+    "subtitle": "I build academic and professional-style software projects with strong structure, secure backend logic, and interfaces that stay clear under real constraints.",
+    "availability": "Open to internships, graduate roles, and project-based opportunities.",
+    "location": "Queretaro, Mexico",
+    "profile": "Profile",
+    "snapshot": "Snapshot",
+    "quickNote": "Focused on software architecture, full stack delivery, and disciplined engineering practices.",
+    "viewProjects": "View projects",
+    "openCv": "Open CV",
+    "contactMe": "Contact me"
+  },
+  "stats": {
+    "endToEndDelivery": "End-to-end delivery",
+    "germanLevel": "German level",
+    "englishLevel": "English level",
+    "architectureApproaches": "Architecture approaches applied"
+  },
+  "about": {
+    "eyebrow": "About Me",
+    "title": "I work best where architecture, implementation, and quality all matter.",
+    "description": "I am a computer engineering student with hands-on work in backend services, frontend development, software architecture, and quality-driven delivery. My strongest projects come from academic environments that were executed with professional standards.",
+    "focusLabel": "Current focus",
+    "imageBadge": "Engineering profile",
+    "imageCaptionTitle": "What I bring",
+    "imageCaptionText": "Clear technical reasoning, structured implementation, and the discipline to document and validate what gets built.",
+    "pills": {
+      "fullStackDevelopment": "Full stack development",
+      "softwareArchitecture": "Software architecture",
+      "apiDesign": "API design",
+      "qualityPractices": "Quality practices"
+    },
+    "cards": {
+      "architectureMindset": {
+        "title": "Architecture mindset",
+        "description": "I use structure to reduce complexity, not to decorate the codebase."
+      },
+      "executionAcrossLayers": {
+        "title": "Execution across layers",
+        "description": "I am comfortable moving from UI implementation to backend logic, validation, and database design."
+      },
+      "qualityOrientation": {
+        "title": "Quality orientation",
+        "description": "I work with reviews, standards, and documentation so the project remains maintainable after delivery."
+      },
+      "professionalGrowth": {
+        "title": "Professional growth",
+        "description": "I am looking for teams where I can contribute early and keep raising the technical bar."
+      }
+    }
+  },
+  "timeline": {
+    "eyebrow": "Timeline",
+    "title": "How I have taken projects from requirements to delivery.",
+    "description": "These are the strongest projects in my portfolio. I use this section to show responsibilities, process, and technical decisions, not just final screens.",
+    "stackLabel": "Stack",
+    "items": {
+      "altertex": {
+        "company": "Altertex modular enterprise system",
+        "role": "Software Architect and Full Stack Developer",
+        "location": "Queretaro, Mexico",
+        "period": "Feb 2025 - Jun 2025",
+        "summary": "A large-scale academic enterprise project executed with CMMI-oriented processes and a delivery model that simulated professional software work.",
+        "bullet1": "Designed the solution using Hexagonal Architecture and Clean Architecture to keep the system modular and maintainable.",
+        "bullet2": "Built backend services, data models, and frontend modules for users, roles, categories, quotas, and product flows.",
+        "bullet3": "Implemented permission control, validation rules, and security-focused API behavior.",
+        "bullet4": "Worked with formal documentation, structured reviews, and quality checkpoints across the project.",
+        "bullet5": "Took an early leadership role to support estimation adjustments and coordination with the external training partner."
+      },
+      "wushu": {
+        "company": "Queretaro Wushu Kung Fu Association app",
+        "role": "Full Stack Developer for iOS delivery",
+        "location": "Queretaro, Mexico",
+        "period": "Sep 2024 - Dec 2024",
+        "summary": "A mobile app project centered on analysis, architecture, implementation, testing, and deployment preparation for iOS.",
+        "bullet1": "Analyzed functional and non-functional requirements before moving into implementation.",
+        "bullet2": "Designed the mobile architecture with MVVM to keep features scalable and responsibilities separated.",
+        "bullet3": "Implemented SwiftUI views and app flows with attention to usability and performance.",
+        "bullet4": "Validated the product through testing and iterative improvements under a Scrum workflow.",
+        "bullet5": "Prepared the application for deployment while keeping quality and security in scope."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "Selected builds and the results they produced.",
+    "description": "",
+    "badge": "Selected project",
+    "resultLabel": "Outcome",
+    "highlightLabel": "Why it matters",
+    "items": {
+      "altertex": {
+        "title": "Altertex enterprise platform",
+        "description": "A modular management system designed for maintainability, permission control, and secure business workflows.",
+        "result": "Delivered enterprise-style modules for users, roles, quotas, categories, products, and protected admin flows.",
+        "highlight": "Strongest example of architecture and quality practices applied in a single project."
+      },
+      "wushu": {
+        "title": "Wushu iOS application",
+        "description": "An iOS app planned from requirements through architecture, interface construction, testing, and deployment readiness.",
+        "result": "Produced a cleaner MVVM-based mobile experience with scalable feature organization.",
+        "highlight": "Shows my ability to move from analysis to mobile delivery, not just UI assembly."
+      },
+      "workflow": {
+        "title": "Architecture-driven workflow",
+        "description": "A repeatable way of working that connects architecture choices, documentation, code quality, and implementation speed.",
+        "result": "Helped keep projects structured across frontend, backend, validation, and review processes.",
+        "highlight": "This is the layer behind my work, not a separate product, and it affects how every project is built."
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "title": "Technical areas I can contribute in from day one.",
+    "description": "The goal here is clarity: what I can work on, which tools I already use, and how those skills connect to real project delivery.",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "data": "Data",
+      "architectureQuality": "Architecture and quality"
+    }
+  },
+  "education": {
+    "eyebrow": "Education",
+    "title": "Academic training with local depth and international perspective.",
+    "description": "My academic path combines a strong engineering base in Mexico with an exchange experience in the Netherlands.",
+    "badge": "Academic stage",
+    "items": {
+      "tec": {
+        "institution": "Tecnologico de Monterrey",
+        "degree": "Bachelor's degree in Computer Engineering",
+        "location": "Queretaro, Mexico",
+        "period": "Aug 2022 - Present",
+        "description": "Training in software engineering, systems thinking, architecture, implementation, and formal project execution."
+      },
+      "twente": {
+        "institution": "University of Twente",
+        "degree": "Academic exchange in Computer Engineering",
+        "location": "Enschede, Netherlands",
+        "period": "Aug 2025 - Feb 2026",
+        "description": "International academic experience that strengthened adaptability, autonomy, and work across multicultural contexts."
+      }
+    }
+  },
+  "philosophy": {
+    "eyebrow": "Approach",
+    "title": "The principles behind how I build software.",
+    "item1": "Keep architecture practical and tied to delivery.",
+    "item2": "Prefer clarity in code, interfaces, and communication.",
+    "item3": "Use quality processes to protect momentum, not to slow teams down.",
+    "item4": "Build solutions that remain maintainable after the first release."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "If your team needs someone who can build and learn fast, let's talk.",
+    "description": "I am especially interested in internships, graduate roles, and teams that value clean implementation, architecture, and product quality.",
+    "basedIn": "Based in",
+    "availabilityCard": "Available for internships, graduate opportunities, and technical collaboration.",
+    "quickLabel": "Best fit",
+    "quickText": "Backend, full stack, and architecture-oriented roles where I can contribute with discipline and keep growing fast.",
+    "links": {
+      "email": {
+        "label": "Email",
+        "note": "Best channel for opportunities, internships, or direct contact."
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "note": "Professional profile, background, and academic project history."
+      },
+      "phone": {
+        "label": "Phone",
+        "note": "Good for interviews and direct role-related conversations."
+      },
+      "instagram": {
+        "label": "Instagram",
+        "note": "A more personal channel with daily updates and creative context."
+      }
+    }
+  },
+  "footer": {
+    "builtWith": "Built with Next.js, Tailwind CSS, Motion, and GSAP.",
+    "email": "Email"
+  }
+}
