@@ -1,27 +1,25 @@
 import Image from "next/image";
 import { Compass, Landmark, MapPin } from "lucide-react";
-import { getPortfolioContent, type Locale } from "@/data/portfolio";
+import type { PortfolioContent } from "@/data/portfolio";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Reveal } from "@/components/ui/Reveal";
 
 const educationIcons = [Landmark, Compass];
 
 type EducationProps = {
-  locale: Locale;
+  education: PortfolioContent["education"];
 };
 
-export function Education({ locale }: EducationProps) {
-  const copy = getPortfolioContent(locale);
-
+export function Education({ education }: EducationProps) {
   return (
     <section id="education" className="section-spacing">
       <div className="section-shell">
         <Reveal>
-          <SectionTitle eyebrow={copy.education.eyebrow} title={copy.education.title} description={copy.education.description} />
+          <SectionTitle eyebrow={education.eyebrow} title={education.title} description={education.description} />
         </Reveal>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
-          {copy.education.items.map((item, index) => {
+          {education.items.map((item, index) => {
             const Icon = educationIcons[index % educationIcons.length];
             return (
               <Reveal key={item.institution} delay={index * 0.08}>
@@ -31,7 +29,7 @@ export function Education({ locale }: EducationProps) {
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-transparent to-transparent" />
                     <div className="absolute left-5 top-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-slate-950/55 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-sky-200 backdrop-blur">
                       <Icon className="h-4 w-4" />
-                      {copy.education.badge}
+                      {education.badge}
                     </div>
                   </div>
 

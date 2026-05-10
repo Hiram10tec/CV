@@ -103,25 +103,25 @@
     "description": "",
     "badge": "",
     "resultLabel": "Resultado",
-    "highlightLabel": "Por qué importa",
+    "highlightLabel": "Reto técnico",
     "items": {
       "altertex": {
         "title": "Plataforma empresarial Altertex",
         "description": "Sistema modular de gestión diseñado para mantenibilidad, control de permisos y flujos de negocio seguros.",
         "result": "Entregó módulos tipo empresarial para usuarios, roles, cuotas, categorías, productos y flujos administrativos protegidos.",
-        "highlight": "Es el ejemplo más fuerte de arquitectura y prácticas de calidad aplicadas en un mismo proyecto."
+        "highlight": "Mantener permisos, validaciones y flujos administrativos consistentes sin volver rígidos los módulos del sistema."
       },
       "wushu": {
         "title": "Aplicación iOS Wushu",
         "description": "App iOS planeada desde requerimientos hasta arquitectura, construcción de interfaces, pruebas y preparación de despliegue.",
         "result": "Produjo una experiencia móvil basada en MVVM con organización escalable de funcionalidades.",
-        "highlight": "Demuestra capacidad para ir del análisis a la entrega móvil, no sólo al armado de UI."
+        "highlight": "Convertir requerimientos y flujos de usuario en una app móvil clara, escalable y preparada para pruebas."
       },
       "workflow": {
         "title": "Flujo de trabajo guiado por arquitectura",
         "description": "Forma de trabajo repetible que conecta decisiones de arquitectura, documentación, calidad de código y velocidad de implementación.",
         "result": "Ayudó a mantener proyectos estructurados entre frontend, backend, validaciones y revisiones.",
-        "highlight": "No es un producto aparte: es la capa que define cómo construyo cada proyecto."
+        "highlight": "Alinear arquitectura, documentación y calidad sin frenar la implementación ni hacer el proceso más pesado."
       }
     }
   },

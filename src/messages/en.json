@@ -103,25 +103,25 @@
     "description": "",
     "badge": "Selected project",
     "resultLabel": "Outcome",
-    "highlightLabel": "Why it matters",
+    "highlightLabel": "Technical challenge",
     "items": {
       "altertex": {
         "title": "Altertex enterprise platform",
         "description": "A modular management system designed for maintainability, permission control, and secure business workflows.",
         "result": "Delivered enterprise-style modules for users, roles, quotas, categories, products, and protected admin flows.",
-        "highlight": "Strongest example of architecture and quality practices applied in a single project."
+        "highlight": "Keeping permissions, validation rules, and admin workflows consistent without making the system modules rigid."
       },
       "wushu": {
         "title": "Wushu iOS application",
         "description": "An iOS app planned from requirements through architecture, interface construction, testing, and deployment readiness.",
         "result": "Produced a cleaner MVVM-based mobile experience with scalable feature organization.",
-        "highlight": "Shows my ability to move from analysis to mobile delivery, not just UI assembly."
+        "highlight": "Turning requirements and user flows into a clear, scalable mobile app prepared for testing."
       },
       "workflow": {
         "title": "Architecture-driven workflow",
         "description": "A repeatable way of working that connects architecture choices, documentation, code quality, and implementation speed.",
         "result": "Helped keep projects structured across frontend, backend, validation, and review processes.",
-        "highlight": "This is the layer behind my work, not a separate product, and it affects how every project is built."
+        "highlight": "Aligning architecture, documentation, and quality without slowing implementation or making the process heavy."
       }
     }
   },

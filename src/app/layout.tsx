@@ -1,14 +1,30 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
+import { defaultLocale, getPortfolioContent, isLocale, type Locale } from "@/data/portfolio";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Hiram Mendoza | Portfolio",
-  description: "Personal portfolio for Hiram Mendoza - computer engineering student and full stack developer.",
-};
+async function getRequestLocale(): Promise<Locale> {
+  const requestHeaders = await headers();
+  const locale = requestHeaders.get("x-portfolio-locale");
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return locale && isLocale(locale) ? locale : defaultLocale;
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getRequestLocale();
+  const copy = getPortfolioContent(locale);
+
+  return {
+    title: copy.metadata.title,
+    description: copy.metadata.description,
+  };
+}
+
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const locale = await getRequestLocale();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body>{children}</body>
     </html>
   );

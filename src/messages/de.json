@@ -103,25 +103,25 @@
     "description": "",
     "badge": "Ausgewähltes Projekt",
     "resultLabel": "Ergebnis",
-    "highlightLabel": "Warum es relevant ist",
+    "highlightLabel": "Technische Herausforderung",
     "items": {
       "altertex": {
         "title": "Altertex Enterprise-Plattform",
         "description": "Ein modulares Verwaltungssystem mit Fokus auf Wartbarkeit, Berechtigungskontrolle und sichere Geschäftsabläufe.",
         "result": "Geliefert wurden Enterprise-Module für Benutzer, Rollen, Quoten, Kategorien, Produkte und geschützte Admin-Flows.",
-        "highlight": "Das stärkste Beispiel dafür, wie ich Architektur und Qualitätspraktiken in einem Projekt zusammenführe."
+        "highlight": "Berechtigungen, Validierungsregeln und Admin-Abläufe konsistent halten, ohne die Systemmodule starr zu machen."
       },
       "wushu": {
         "title": "Wushu iOS-App",
         "description": "Eine iOS-App, geplant von Anforderungen über Architektur und UI bis zu Tests und Auslieferungsreife.",
         "result": "Entstandene MVVM-basierte Mobile-Erfahrung mit sauberer und skalierbarer Feature-Struktur.",
-        "highlight": "Zeigt, dass ich von der Analyse bis zur mobilen Auslieferung arbeiten kann, nicht nur an Oberflächen."
+        "highlight": "Anforderungen und Nutzerflüsse in eine klare, skalierbare und testbare Mobile-App übertragen."
       },
       "workflow": {
         "title": "Architekturgetriebener Workflow",
         "description": "Eine wiederverwendbare Arbeitsweise, die Architekturentscheidungen, Dokumentation, Codequalität und Umsetzung verbindet.",
         "result": "Half dabei, Projekte über Frontend, Backend, Validierung und Review-Prozesse hinweg strukturiert zu halten.",
-        "highlight": "Kein separates Produkt, sondern die Ebene, die bestimmt, wie ich jedes Projekt aufbaue."
+        "highlight": "Architektur, Dokumentation und Qualität abstimmen, ohne die Umsetzung auszubremsen oder den Prozess schwerfällig zu machen."
       }
     }
   },

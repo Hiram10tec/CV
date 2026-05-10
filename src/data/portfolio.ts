@@ -3,8 +3,10 @@ import { personalInfo } from "@/config/site";
 import { defaultLocale, getMessages, isLocale, locales, type Locale } from "@/lib/i18n";
 
 type ContactIcon = "Mail" | "Linkedin" | "Phone" | "Instagram";
+type ProjectId = "altertex" | "wushu" | "workflow";
+type SkillGroupId = "frontend" | "backend" | "mobile" | "data" | "architectureQuality";
 
-type PortfolioContent = {
+export type PortfolioContent = {
   metadata: {
     title: string;
     description: string;
@@ -50,7 +52,7 @@ type PortfolioContent = {
     description: string;
     stackLabel: string;
     items: Array<{
-      id: string;
+      id: ProjectId;
       company: string;
       role: string;
       location: string;
@@ -68,6 +70,7 @@ type PortfolioContent = {
     resultLabel: string;
     highlightLabel: string;
     items: Array<{
+      id: string;
       title: string;
       description: string;
       result: string;
@@ -80,7 +83,7 @@ type PortfolioContent = {
     eyebrow: string;
     title: string;
     description: string;
-    groups: Array<{ title: string; skills: string[] }>;
+    groups: Array<{ id: SkillGroupId; title: string; skills: string[] }>;
   };
   education: {
     eyebrow: string;
@@ -177,22 +180,27 @@ const projectItems = [
 
 const skillGroups = [
   {
+    id: "frontend",
     titleKey: "skills.groups.frontend",
     skills: ["React", "JavaScript", "TypeScript", "Tailwind CSS", "Responsive interfaces", "UI structure"],
   },
   {
+    id: "backend",
     titleKey: "skills.groups.backend",
     skills: ["Node.js", "Express", "REST APIs", "Validation", "Permission control", "Security flows"],
   },
   {
+    id: "mobile",
     titleKey: "skills.groups.mobile",
     skills: ["Swift", "SwiftUI", "MVVM", "iOS app delivery"],
   },
   {
+    id: "data",
     titleKey: "skills.groups.data",
     skills: ["SQL", "MySQL", "Data modeling", "AWS S3"],
   },
   {
+    id: "architectureQuality",
     titleKey: "skills.groups.architectureQuality",
     skills: ["Hexagonal", "Clean Architecture", "MVVM", "CMMI", "Scrum", "DAD", "Swagger", "IEEE 829"],
   },
@@ -219,7 +227,7 @@ const contactLinkConfigs = [
   {
     id: "phone",
     icon: "Phone" as const,
-    href: `tel:${personalInfo.phone}`,
+    href: personalInfo.phoneHref,
     value: personalInfo.phone,
   },
   {
@@ -313,6 +321,7 @@ export function getPortfolioContent(locale: Locale): PortfolioContent {
       resultLabel: t("projects.resultLabel"),
       highlightLabel: t("projects.highlightLabel"),
       items: projectItems.map((item) => ({
+        id: item.id,
         title: t(`projects.items.${item.id}.title`),
         description: t(`projects.items.${item.id}.description`),
         result: t(`projects.items.${item.id}.result`),
@@ -326,6 +335,7 @@ export function getPortfolioContent(locale: Locale): PortfolioContent {
       title: t("skills.title"),
       description: t("skills.description"),
       groups: skillGroups.map((group) => ({
+        id: group.id,
         title: t(group.titleKey),
         skills: [...group.skills],
       })),

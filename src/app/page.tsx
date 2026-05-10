@@ -9,7 +9,7 @@ import { Skills } from "@/components/sections/Skills";
 import { Education } from "@/components/sections/Education";
 import { Philosophy } from "@/components/sections/Philosophy";
 import { Contact } from "@/components/sections/Contact";
-import { defaultLocale, isLocale, type Locale } from "@/data/portfolio";
+import { defaultLocale, getPortfolioContent, isLocale, locales, personalInfo, type Locale } from "@/data/portfolio";
 
 export const dynamic = "force-dynamic";
 
@@ -22,20 +22,21 @@ export default async function Home({ searchParams }: HomeProps) {
   const rawLang = resolvedSearchParams.lang;
   const langValue = Array.isArray(rawLang) ? rawLang[0] : rawLang;
   const locale: Locale = langValue && isLocale(langValue) ? langValue : defaultLocale;
+  const copy = getPortfolioContent(locale);
 
   return (
     <main className="relative overflow-x-hidden">
       <ScrollProgress />
-      <Navbar locale={locale} />
-      <Hero locale={locale} />
-      <About locale={locale} />
-      <ExperienceSticky locale={locale} />
-      <Projects locale={locale} />
-      <Skills locale={locale} />
-      <Education locale={locale} />
-      <Philosophy locale={locale} />
-      <Contact locale={locale} />
-      <Footer locale={locale} />
+      <Navbar locale={locale} locales={locales} nav={copy.nav} name={personalInfo.name} />
+      <Hero copy={{ hero: copy.hero, stats: copy.stats }} personalInfo={personalInfo} locale={locale} />
+      <About about={copy.about} personalInfo={personalInfo} />
+      <ExperienceSticky timeline={copy.timeline} />
+      <Projects projects={copy.projects} />
+      <Skills skills={copy.skills} />
+      <Education education={copy.education} />
+      <Philosophy philosophy={copy.philosophy} />
+      <Contact contact={copy.contact} location={copy.hero.location} />
+      <Footer footer={copy.footer} personalInfo={personalInfo} />
     </main>
   );
 }

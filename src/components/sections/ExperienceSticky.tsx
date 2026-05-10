@@ -5,18 +5,17 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MapPin } from "lucide-react";
 import { useGSAP } from "@gsap/react";
-import { getPortfolioContent, type Locale } from "@/data/portfolio";
+import type { PortfolioContent } from "@/data/portfolio";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 type ExperienceStickyProps = {
-  locale: Locale;
+  timeline: PortfolioContent["timeline"];
 };
 
-export function ExperienceSticky({ locale }: ExperienceStickyProps) {
+export function ExperienceSticky({ timeline }: ExperienceStickyProps) {
   const sectionRef = useRef<HTMLElement | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const copy = getPortfolioContent(locale);
 
   useGSAP(
     () => {
@@ -67,19 +66,19 @@ export function ExperienceSticky({ locale }: ExperienceStickyProps) {
 
       return () => mm.revert();
     },
-    { scope: sectionRef, dependencies: [locale] }
+    { scope: sectionRef, dependencies: [timeline] }
   );
 
   return (
     <section ref={sectionRef} id="experience" className="section-spacing relative">
       <div className="section-shell grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:gap-14">
         <div className="lg:sticky lg:top-28 lg:self-start lg:pt-8">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.32em] text-sky-300/80">{copy.timeline.eyebrow}</p>
-          <h2 className="max-w-md text-4xl font-semibold tracking-tight text-white md:text-5xl lg:text-6xl">{copy.timeline.title}</h2>
-          <p className="mt-6 max-w-md text-lg leading-8 text-slate-300 md:text-xl">{copy.timeline.description}</p>
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.32em] text-sky-300/80">{timeline.eyebrow}</p>
+          <h2 className="max-w-md text-4xl font-semibold tracking-tight text-white md:text-5xl lg:text-6xl">{timeline.title}</h2>
+          <p className="mt-6 max-w-md text-lg leading-8 text-slate-300 md:text-xl">{timeline.description}</p>
 
           <div className="mt-8 flex gap-3">
-            {copy.timeline.items.map((experience, index) => (
+            {timeline.items.map((experience, index) => (
               <span
                 key={experience.id}
                 className={`h-1.5 w-12 rounded-full transition ${index === activeIndex ? "bg-sky-400" : "bg-white/10"}`}
@@ -89,7 +88,7 @@ export function ExperienceSticky({ locale }: ExperienceStickyProps) {
         </div>
 
         <div className="space-y-6 lg:space-y-8">
-          {copy.timeline.items.map((experience) => (
+          {timeline.items.map((experience) => (
             <article key={experience.id} className="experience-step glass-card rounded-[2rem] p-7 lg:min-h-[24rem] lg:p-9">
               <div className="flex flex-wrap items-start justify-between gap-4">
                 <div>
@@ -117,7 +116,7 @@ export function ExperienceSticky({ locale }: ExperienceStickyProps) {
               </div>
 
               <div className="mt-8">
-                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sky-300/80">{copy.timeline.stackLabel}</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-sky-300/80">{timeline.stackLabel}</p>
                 <div className="mt-4 flex flex-wrap gap-2.5">
                   {experience.stack.map((tech) => (
                     <span key={tech} className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-slate-200">

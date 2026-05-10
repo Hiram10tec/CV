@@ -1,28 +1,30 @@
 import Image from "next/image";
 import { ArrowUpRight, Boxes, FolderKanban, Layers2, Smartphone } from "lucide-react";
-import { getPortfolioContent, type Locale } from "@/data/portfolio";
+import type { PortfolioContent } from "@/data/portfolio";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Reveal } from "@/components/ui/Reveal";
 
-const projectIcons = [Boxes, Smartphone, Layers2];
-
-type ProjectsProps = {
-  locale: Locale;
+const projectIcons: Record<PortfolioContent["projects"]["items"][number]["id"], typeof Boxes> = {
+  altertex: Boxes,
+  wushu: Smartphone,
+  workflow: Layers2,
 };
 
-export function Projects({ locale }: ProjectsProps) {
-  const copy = getPortfolioContent(locale);
+type ProjectsProps = {
+  projects: PortfolioContent["projects"];
+};
 
+export function Projects({ projects }: ProjectsProps) {
   return (
     <section id="projects" className="section-spacing">
       <div className="section-shell">
         <Reveal>
-          <SectionTitle eyebrow={copy.projects.eyebrow} title={copy.projects.title} description={copy.projects.description} />
+          <SectionTitle eyebrow={projects.eyebrow} title={projects.title} description={projects.description} />
         </Reveal>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
-          {copy.projects.items.map((project, index) => {
-            const Icon = projectIcons[index % projectIcons.length];
+          {projects.items.map((project, index) => {
+            const Icon = projectIcons[project.id];
             return (
               <Reveal key={project.title} delay={index * 0.08}>
                 <article className="group glass-card h-full overflow-hidden rounded-[2rem] transition duration-300 hover:-translate-y-1 hover:border-white/20">
@@ -53,13 +55,13 @@ export function Projects({ locale }: ProjectsProps) {
                     <p className="mt-4 text-base leading-8 text-slate-300">{project.description}</p>
 
                     <div className="mt-5 rounded-[1.25rem] border border-white/8 bg-white/[0.03] p-4">
-                      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300/80">{copy.projects.resultLabel}</p>
-                      <p className="mt-3 text-base leading-8 text-slate-200">{project.result}</p>
+                      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300/80">{projects.highlightLabel}</p>
+                      <p className="mt-3 text-base leading-8 text-slate-300">{project.highlight}</p>
                     </div>
 
                     <div className="mt-4 rounded-[1.25rem] border border-white/8 bg-white/[0.03] p-4">
-                      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300/80">{copy.projects.highlightLabel}</p>
-                      <p className="mt-3 text-base leading-8 text-slate-300">{project.highlight}</p>
+                      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300/80">{projects.resultLabel}</p>
+                      <p className="mt-3 text-base leading-8 text-slate-200">{project.result}</p>
                     </div>
 
                     <div className="mt-6 flex flex-wrap gap-2">

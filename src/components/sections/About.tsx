@@ -1,30 +1,32 @@
 import Image from "next/image";
 import { Code2, Layers3, ShieldCheck, Sparkles } from "lucide-react";
-import { getPortfolioContent, personalInfo, type Locale } from "@/data/portfolio";
+import type { PortfolioContent } from "@/data/portfolio";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Reveal } from "@/components/ui/Reveal";
 
 const icons = [Layers3, Code2, ShieldCheck, Sparkles];
 
 type AboutProps = {
-  locale: Locale;
+  about: PortfolioContent["about"];
+  personalInfo: {
+    fullName: string;
+    profileImage: string;
+  };
 };
 
-export function About({ locale }: AboutProps) {
-  const copy = getPortfolioContent(locale);
-
+export function About({ about, personalInfo }: AboutProps) {
   return (
     <section id="about" className="section-spacing">
       <div className="section-shell grid gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:gap-16">
         <Reveal>
           <div>
-            <SectionTitle eyebrow={copy.about.eyebrow} title={copy.about.title} description={copy.about.description} />
+            <SectionTitle eyebrow={about.eyebrow} title={about.title} description={about.description} />
 
             <div className="mt-8 grid gap-5 lg:grid-cols-[0.92fr_1.08fr]">
               <div className="rounded-[2rem] border border-white/8 bg-white/[0.03] p-7">
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-300/80">{copy.about.focusLabel}</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-300/80">{about.focusLabel}</p>
                 <div className="mt-5 flex flex-wrap gap-3">
-                  {copy.about.pills.map((pill) => (
+                  {about.pills.map((pill) => (
                     <span
                       key={pill}
                       className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm font-medium tracking-[0.12em] text-slate-100"
@@ -47,8 +49,8 @@ export function About({ locale }: AboutProps) {
                 </div>
 
                 <div className="border-t border-white/8 bg-slate-950/70 p-5">
-                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-sky-300/80">{copy.about.imageCaptionTitle}</p>
-                  <p className="mt-2 text-base leading-7 text-slate-200">{copy.about.imageCaptionText}</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-sky-300/80">{about.imageCaptionTitle}</p>
+                  <p className="mt-2 text-base leading-7 text-slate-200">{about.imageCaptionText}</p>
                 </div>
               </div>
             </div>
@@ -56,7 +58,7 @@ export function About({ locale }: AboutProps) {
         </Reveal>
 
         <div className="grid gap-5 sm:grid-cols-2">
-          {copy.about.cards.map((card, index) => {
+          {about.cards.map((card, index) => {
             const Icon = icons[index % icons.length];
             return (
               <Reveal key={card.title} delay={index * 0.08}>

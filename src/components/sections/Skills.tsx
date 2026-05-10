@@ -24,40 +24,24 @@ import {
   Wrench,
   type LucideIcon,
 } from "lucide-react";
-import { getPortfolioContent, type Locale } from "@/data/portfolio";
+import type { PortfolioContent } from "@/data/portfolio";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Reveal } from "@/components/ui/Reveal";
 
 type SkillsProps = {
-  locale: Locale;
+  skills: PortfolioContent["skills"];
 };
 
-const groupIcons: Record<string, LucideIcon> = {
+const groupIcons: Record<PortfolioContent["skills"]["groups"][number]["id"], LucideIcon> = {
   frontend: MonitorSmartphone,
   backend: Webhook,
   mobile: Smartphone,
   data: Database,
-  architecture: GitBranch,
-  habilidades: Wrench,
-  skills: Wrench,
+  architectureQuality: GitBranch,
 };
 
 function normalize(value: string) {
   return value.toLowerCase();
-}
-
-function getGroupIcon(title: string) {
-  const normalized = normalize(title);
-
-  if (normalized.includes("front")) return groupIcons.frontend;
-  if (normalized.includes("back")) return groupIcons.backend;
-  if (normalized.includes("mobil")) return groupIcons.mobile;
-  if (normalized.includes("data") || normalized.includes("dato")) return groupIcons.data;
-  if (normalized.includes("architect") || normalized.includes("arquitect") || normalized.includes("qualität")) {
-    return groupIcons.architecture;
-  }
-
-  return groupIcons.skills;
 }
 
 function getSkillIcon(skill: string): LucideIcon {
@@ -92,19 +76,17 @@ function getSkillIcon(skill: string): LucideIcon {
 
   return Code2;
 }
-export function Skills({ locale }: SkillsProps) {
-  const copy = getPortfolioContent(locale);
-
+export function Skills({ skills }: SkillsProps) {
   return (
     <section id="skills" className="section-spacing">
       <div className="section-shell">
         <Reveal>
-          <SectionTitle eyebrow={copy.skills.eyebrow} title={copy.skills.title} description={copy.skills.description} />
+          <SectionTitle eyebrow={skills.eyebrow} title={skills.title} description={skills.description} />
         </Reveal>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {copy.skills.groups.map((group, index) => {
-            const GroupIcon = getGroupIcon(group.title);
+          {skills.groups.map((group, index) => {
+            const GroupIcon = groupIcons[group.id] ?? Wrench;
 
             return (
               <Reveal key={group.title} delay={index * 0.07}>

@@ -83,7 +83,7 @@ This portfolio reflects the way I approach software: clear structure, practical 
 
 ## Contact
 
-- Email: hiramskool@gmail.com
+- Email: hirammendozalopez@gmail.com
 - LinkedIn: https://www.linkedin.com/in/hiram-israel-mendoza-l%C3%B3pez-65560431b/
 - Instagram: https://instagram.com/hiram.10
 

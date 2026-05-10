@@ -3,17 +3,22 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { ArrowDownRight, Download, MapPin, Sparkles } from "lucide-react";
-import { getPortfolioContent, personalInfo, type Locale } from "@/data/portfolio";
+import type { Locale, PortfolioContent } from "@/data/portfolio";
 import { BackgroundOrbs } from "@/components/ui/BackgroundOrbs";
+import { localizedHref } from "@/lib/routes";
 
 type HeroProps = {
+  copy: Pick<PortfolioContent, "hero" | "stats">;
+  personalInfo: {
+    name: string;
+    fullName: string;
+    profileImage: string;
+    cvPath: string;
+  };
   locale: Locale;
 };
 
-export function Hero({ locale }: HeroProps) {
-  const copy = getPortfolioContent(locale);
-  const withLang = (hash = "") => `/?lang=${locale}${hash}`;
-
+export function Hero({ copy, personalInfo, locale }: HeroProps) {
   return (
     <section id="top" className="relative flex min-h-screen items-center overflow-hidden pt-28">
       <BackgroundOrbs />
@@ -71,7 +76,7 @@ export function Hero({ locale }: HeroProps) {
             className="mt-10 flex flex-col gap-4 sm:flex-row"
           >
             <a
-              href={withLang("#projects")}
+              href={localizedHref(locale, "#projects")}
               className="rounded-full bg-white px-6 py-3.5 text-base font-semibold text-slate-950 transition hover:scale-[1.02]"
             >
               {copy.hero.viewProjects}
@@ -85,7 +90,7 @@ export function Hero({ locale }: HeroProps) {
               {copy.hero.openCv}
             </a>
             <a
-              href={withLang("#contact")}
+              href={localizedHref(locale, "#contact")}
               className="rounded-full border border-white/12 bg-white/5 px-6 py-3.5 text-base font-semibold text-white transition hover:border-white/20 hover:bg-white/10"
             >
               {copy.hero.contactMe}
