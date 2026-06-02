@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Hiram Mendoza | Portafolio",
-    "description": "Portafolio de Hiram Mendoza, estudiante de Ingeniería en Computación enfocado en arquitectura, desarrollo full stack y calidad de software."
+    "description": "Portafolio de Hiram Mendoza, graduado en Ingeniería en Computación enfocado en arquitectura, desarrollo full stack y calidad de software."
   },
   "nav": {
     "about": "Perfil",
@@ -15,7 +15,7 @@
   },
   "hero": {
     "tagline": "Arquitectura, ejecución y visión de producto.",
-    "title": "Estudiante de Ingeniería en Computación y Desarrollador Full Stack",
+    "title": "Graduado en Ingeniería en Computación y Desarrollador Full Stack",
     "subtitle": "Construyo proyectos académicos y de estilo profesional con buena estructura, lógica backend segura e interfaces claras incluso bajo restricciones reales.",
     "availability": "Disponible para internships, posiciones de recién graduado y colaboraciones por proyecto.",
     "location": "Querétaro, México",
@@ -35,7 +35,7 @@
   "about": {
     "eyebrow": "Perfil",
     "title": "Trabajo mejor donde importan la arquitectura, la implementación y la calidad.",
-    "description": "Soy estudiante de Ingeniería en Computación con experiencia práctica en servicios backend, desarrollo frontend, arquitectura de software y entrega guiada por estándares de calidad. Mis proyectos más sólidos nacen en entornos académicos ejecutados con un nivel profesional.",
+    "description": "Soy graduado en Ingeniería en Computación con experiencia práctica en servicios backend, desarrollo frontend, arquitectura de software y entrega guiada por estándares de calidad. Mis proyectos más sólidos nacen en entornos académicos ejecutados con un nivel profesional.",
     "focusLabel": "Enfoque actual",
     "imageBadge": "Perfil técnico",
     "imageCaptionTitle": "Lo que aporto",
@@ -97,6 +97,18 @@
       }
     }
   },
+  "achievements": {
+    "eyebrow": "Destacados",
+    "title": "Hitos clave.",
+    "items": {
+      "exchange": { "title": "Intercambio Internacional", "description": "University of Twente, Países Bajos — 2025–2026.", "badge": "Twente" },
+      "english": { "title": "Inglés C1", "description": "Competencia profesional en inglés.", "badge": "C1" },
+      "german": { "title": "Alemán A2", "description": "Comunicación funcional, en mejora continua.", "badge": "A2" },
+      "ios": { "title": "App iOS Entregada", "description": "Ciclo completo desde requerimientos hasta despliegue listo para TestFlight.", "badge": "iOS" },
+      "cmmi": { "title": "Proceso nivel CMMI", "description": "Prácticas formales del ciclo de vida en proyecto empresarial.", "badge": "CMMI" },
+      "architecture": { "title": "Clean + Hexagonal Architecture", "description": "Implementada en sistema empresarial full stack.", "badge": "Arch" }
+    }
+  },
   "projects": {
     "eyebrow": "Proyectos",
     "title": "Trabajos seleccionados y los resultados que generaron.",
@@ -104,6 +116,7 @@
     "badge": "",
     "resultLabel": "Resultado",
     "highlightLabel": "Reto técnico",
+    "reposLabel": "Repositorios",
     "items": {
       "altertex": {
         "title": "Plataforma empresarial Altertex",
@@ -187,6 +200,10 @@
       "phone": {
         "label": "Teléfono",
         "note": "Útil para entrevistas y conversaciones directas sobre vacantes."
+      },
+      "github": {
+        "label": "GitHub",
+        "note": "Código fuente, proyectos y contribuciones."
       },
       "instagram": {
         "label": "Instagram",

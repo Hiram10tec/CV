@@ -2,9 +2,11 @@ import { createTranslator } from "use-intl/core";
 import { personalInfo } from "@/config/site";
 import { defaultLocale, getMessages, isLocale, locales, type Locale } from "@/lib/i18n";
 
-type ContactIcon = "Mail" | "Linkedin" | "Phone" | "Instagram";
+type ContactIcon = "Mail" | "Linkedin" | "Phone" | "Instagram" | "Github";
 type ProjectId = "altertex" | "wushu" | "workflow";
 type SkillGroupId = "frontend" | "backend" | "mobile" | "data" | "architectureQuality";
+
+type AchievementId = "exchange" | "english" | "german" | "ios" | "cmmi" | "architecture";
 
 export type PortfolioContent = {
   metadata: {
@@ -69,6 +71,7 @@ export type PortfolioContent = {
     badge: string;
     resultLabel: string;
     highlightLabel: string;
+    reposLabel: string;
     items: Array<{
       id: string;
       title: string;
@@ -77,6 +80,7 @@ export type PortfolioContent = {
       highlight: string;
       tags: string[];
       image: string;
+      links: Array<{ label: string; href: string }>;
     }>;
   };
   skills: {
@@ -98,6 +102,11 @@ export type PortfolioContent = {
       image: string;
       description: string;
     }>;
+  };
+  achievements: {
+    eyebrow: string;
+    title: string;
+    items: Array<{ id: AchievementId; title: string; description: string; badge: string }>;
   };
   philosophy: {
     eyebrow: string;
@@ -165,16 +174,24 @@ const projectItems = [
     id: "altertex",
     image: "/images/project-altertex.svg",
     tags: ["React", "Node.js", "MySQL", "REST APIs", "2FA", "Architecture"],
+    links: [
+      { label: "Frontend", href: "https://github.com/CodeAnd-Co/Frontend-Text-Lines" },
+      { label: "Backend", href: "https://github.com/CodeAnd-Co/Backend-textiles" },
+    ],
   },
   {
     id: "wushu",
     image: "/images/project-wushu.svg",
     tags: ["SwiftUI", "Swift", "MVVM", "Testing", "UX"],
+    links: [
+      { label: "iOS App", href: "https://github.com/Academia-Mexicana-de-Wushu-Queretaro/iOS" },
+    ],
   },
   {
     id: "workflow",
     image: "/images/project-architecture.svg",
     tags: ["Clean Architecture", "Hexagonal", "CMMI", "IEEE 829", "ESLint"],
+    links: [] as Array<{ label: string; href: string }>,
   },
 ] as const;
 
@@ -211,6 +228,8 @@ const educationItems = [
   { id: "twente", image: "/images/education-twente.jpg" },
 ] as const;
 
+const achievementIds: AchievementId[] = ["exchange", "english", "german", "ios", "cmmi", "architecture"];
+
 const contactLinkConfigs = [
   {
     id: "email",
@@ -223,6 +242,12 @@ const contactLinkConfigs = [
     icon: "Linkedin" as const,
     href: personalInfo.linkedin,
     value: "Hiram Mendoza",
+  },
+  {
+    id: "github",
+    icon: "Github" as const,
+    href: personalInfo.github,
+    value: "Hiram10tec",
   },
   {
     id: "phone",
@@ -320,6 +345,7 @@ export function getPortfolioContent(locale: Locale): PortfolioContent {
       badge: t("projects.badge"),
       resultLabel: t("projects.resultLabel"),
       highlightLabel: t("projects.highlightLabel"),
+      reposLabel: t("projects.reposLabel"),
       items: projectItems.map((item) => ({
         id: item.id,
         title: t(`projects.items.${item.id}.title`),
@@ -328,6 +354,7 @@ export function getPortfolioContent(locale: Locale): PortfolioContent {
         highlight: t(`projects.items.${item.id}.highlight`),
         tags: [...item.tags],
         image: item.image,
+        links: item.links as Array<{ label: string; href: string }>,
       })),
     },
     skills: {
@@ -352,6 +379,16 @@ export function getPortfolioContent(locale: Locale): PortfolioContent {
         period: t(`education.items.${item.id}.period`),
         image: item.image,
         description: t(`education.items.${item.id}.description`),
+      })),
+    },
+    achievements: {
+      eyebrow: t("achievements.eyebrow"),
+      title: t("achievements.title"),
+      items: achievementIds.map((id) => ({
+        id,
+        title: t(`achievements.items.${id}.title`),
+        description: t(`achievements.items.${id}.description`),
+        badge: t(`achievements.items.${id}.badge`),
       })),
     },
     philosophy: {

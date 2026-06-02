@@ -3,6 +3,7 @@ import { Code2, Layers3, ShieldCheck, Sparkles } from "lucide-react";
 import type { PortfolioContent } from "@/data/portfolio";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Reveal } from "@/components/ui/Reveal";
+import { TronCard } from "@/components/ui/TronCard";
 
 const icons = [Layers3, Code2, ShieldCheck, Sparkles];
 
@@ -23,22 +24,25 @@ export function About({ about, personalInfo }: AboutProps) {
             <SectionTitle eyebrow={about.eyebrow} title={about.title} description={about.description} />
 
             <div className="mt-8 grid gap-5 lg:grid-cols-[0.92fr_1.08fr]">
-              <div className="rounded-[2rem] border border-white/8 bg-white/[0.03] p-7">
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-300/80">{about.focusLabel}</p>
+              <TronCard className="p-7" style={{ borderRadius: "4px" }}>
+                <p className="font-tron text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-cyan-400/70">
+                  {about.focusLabel}
+                </p>
                 <div className="mt-5 flex flex-wrap gap-3">
                   {about.pills.map((pill) => (
                     <span
                       key={pill}
-                      className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm font-medium tracking-[0.12em] text-slate-100"
+                      className="font-tron border border-cyan-400/20 bg-cyan-400/5 px-4 py-2 text-[0.68rem] font-medium uppercase tracking-[0.1em] text-[#cce8f5]"
+                      style={{ borderRadius: "2px" }}
                     >
                       {pill}
                     </span>
                   ))}
                 </div>
-              </div>
+              </TronCard>
 
-              <div className="overflow-hidden rounded-[2rem] border border-white/8 bg-white/[0.03]">
-                <div className="relative aspect-[4/5] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(226,232,240,0.88))]">
+              <div className="overflow-hidden border border-cyan-400/20 bg-[#000c14]" style={{ borderRadius: "4px" }}>
+                <div className="relative aspect-[4/5]">
                   <Image
                     src={personalInfo.profileImage}
                     alt={personalInfo.fullName}
@@ -46,11 +50,13 @@ export function About({ about, personalInfo }: AboutProps) {
                     sizes="(max-width: 1024px) 100vw, 30vw"
                     className="object-cover object-center"
                   />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#000c14]/60 via-transparent to-transparent" />
                 </div>
-
-                <div className="border-t border-white/8 bg-slate-950/70 p-5">
-                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-sky-300/80">{about.imageCaptionTitle}</p>
-                  <p className="mt-2 text-base leading-7 text-slate-200">{about.imageCaptionText}</p>
+                <div className="border-t border-cyan-400/15 bg-[#000c14]/90 p-5">
+                  <p className="font-tron text-[0.6rem] font-semibold uppercase tracking-[0.25em] text-cyan-400/70">
+                    {about.imageCaptionTitle}
+                  </p>
+                  <p className="mt-2 text-sm leading-7 text-[#8ab8cc]">{about.imageCaptionText}</p>
                 </div>
               </div>
             </div>
@@ -62,13 +68,16 @@ export function About({ about, personalInfo }: AboutProps) {
             const Icon = icons[index % icons.length];
             return (
               <Reveal key={card.title} delay={index * 0.08}>
-                <article className="glass-card h-full rounded-[1.75rem] p-6">
-                  <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400/25 to-fuchsia-400/20 text-sky-200">
+                <TronCard scan className="h-full p-6" style={{ borderRadius: "4px" }}>
+                  <div
+                    className="mb-5 inline-flex h-11 w-11 items-center justify-center border border-cyan-400/25 bg-cyan-400/8 text-cyan-300"
+                    style={{ borderRadius: "2px", boxShadow: "0 0 10px rgba(0,212,255,0.12)" }}
+                  >
                     <Icon className="h-5 w-5" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-white">{card.title}</h3>
-                  <p className="mt-3 text-base leading-8 text-slate-300">{card.description}</p>
-                </article>
+                  <h3 className="font-tron text-lg font-semibold text-white">{card.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-[#8ab8cc]">{card.description}</p>
+                </TronCard>
               </Reveal>
             );
           })}

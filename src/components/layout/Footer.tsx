@@ -11,18 +11,32 @@ type FooterProps = {
 
 export function Footer({ footer, personalInfo }: FooterProps) {
   return (
-    <footer className="border-t border-white/6 py-8">
-      <div className="section-shell flex flex-col items-center justify-between gap-4 text-center text-base text-slate-400 md:flex-row md:text-left">
-        <p>
-          © 2026 {personalInfo.fullName}. {footer.builtWith}
+    <footer className="border-t border-cyan-400/12 py-8">
+      <div className="section-shell flex flex-col items-center justify-between gap-4 text-center md:flex-row md:text-left">
+        <p className="font-tron text-[0.65rem] uppercase tracking-[0.2em] text-[#4a7a9b]">
+          © 2026{" "}
+          <span className="text-cyan-400/70">{personalInfo.fullName}</span>
+          {" · "}
+          {footer.builtWith}
         </p>
-        <div className="flex items-center gap-5">
-          <a className="transition hover:text-white" href={personalInfo.linkedin} target="_blank" rel="noreferrer">
+
+        <div className="flex items-center gap-6">
+          <div className="h-px w-8 bg-gradient-to-r from-transparent to-cyan-400/30" />
+          <a
+            className="font-tron text-[0.65rem] uppercase tracking-[0.2em] text-[#4a7a9b] transition hover:text-cyan-300"
+            href={personalInfo.linkedin}
+            target="_blank"
+            rel="noreferrer"
+          >
             LinkedIn
           </a>
-          <a className="transition hover:text-white" href={`mailto:${personalInfo.email}`}>
+          <a
+            className="font-tron text-[0.65rem] uppercase tracking-[0.2em] text-[#4a7a9b] transition hover:text-cyan-300"
+            href={`mailto:${personalInfo.email}`}
+          >
             {footer.email}
           </a>
+          <div className="h-px w-8 bg-gradient-to-l from-transparent to-cyan-400/30" />
         </div>
       </div>
     </footer>

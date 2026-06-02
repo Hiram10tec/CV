@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Hiram Mendoza | Portfolio",
-    "description": "Portfolio of Hiram Mendoza, computer engineering student focused on architecture, full stack development, and software quality."
+    "description": "Portfolio of Hiram Mendoza, computer engineering graduate focused on architecture, full stack development, and software quality."
   },
   "nav": {
     "about": "About Me",
@@ -15,7 +15,7 @@
   },
   "hero": {
     "tagline": "Architecture, execution, and product thinking.",
-    "title": "Computer Engineering Student and Full Stack Developer",
+    "title": "Computer Engineering Graduate and Full Stack Developer",
     "subtitle": "I build academic and professional-style software projects with strong structure, secure backend logic, and interfaces that stay clear under real constraints.",
     "availability": "Open to internships, graduate roles, and project-based opportunities.",
     "location": "Queretaro, Mexico",
@@ -35,7 +35,7 @@
   "about": {
     "eyebrow": "About Me",
     "title": "I work best where architecture, implementation, and quality all matter.",
-    "description": "I am a computer engineering student with hands-on work in backend services, frontend development, software architecture, and quality-driven delivery. My strongest projects come from academic environments that were executed with professional standards.",
+    "description": "I am a computer engineering graduate with hands-on work in backend services, frontend development, software architecture, and quality-driven delivery. My strongest projects come from academic environments that were executed with professional standards.",
     "focusLabel": "Current focus",
     "imageBadge": "Engineering profile",
     "imageCaptionTitle": "What I bring",
@@ -97,6 +97,18 @@
       }
     }
   },
+  "achievements": {
+    "eyebrow": "Highlights",
+    "title": "Key milestones.",
+    "items": {
+      "exchange": { "title": "International Exchange", "description": "University of Twente, Netherlands — 2025–2026.", "badge": "Twente" },
+      "english": { "title": "English C1", "description": "Professional working proficiency.", "badge": "C1" },
+      "german": { "title": "German A2", "description": "Functional communication, actively improving.", "badge": "A2" },
+      "ios": { "title": "iOS App Delivered", "description": "Full cycle from requirements to TestFlight-ready deployment.", "badge": "iOS" },
+      "cmmi": { "title": "CMMI-level Process", "description": "Applied formal software lifecycle practices in enterprise-scale project.", "badge": "CMMI" },
+      "architecture": { "title": "Clean + Hexagonal Architecture", "description": "Implemented across full stack enterprise system.", "badge": "Arch" }
+    }
+  },
   "projects": {
     "eyebrow": "Projects",
     "title": "Selected builds and the results they produced.",
@@ -104,6 +116,7 @@
     "badge": "Selected project",
     "resultLabel": "Outcome",
     "highlightLabel": "Technical challenge",
+    "reposLabel": "Repositories",
     "items": {
       "altertex": {
         "title": "Altertex enterprise platform",
@@ -187,6 +200,10 @@
       "phone": {
         "label": "Phone",
         "note": "Good for interviews and direct role-related conversations."
+      },
+      "github": {
+        "label": "GitHub",
+        "note": "Source code, projects, and open contributions."
       },
       "instagram": {
         "label": "Instagram",

@@ -1,12 +1,15 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
+import { TronCursor } from "@/components/ui/TronCursor";
+import { BackToTop } from "@/components/ui/BackToTop";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { ExperienceSticky } from "@/components/sections/ExperienceSticky";
 import { Projects } from "@/components/sections/Projects";
 import { Skills } from "@/components/sections/Skills";
 import { Education } from "@/components/sections/Education";
+import { Achievements } from "@/components/sections/Achievements";
 import { Philosophy } from "@/components/sections/Philosophy";
 import { Contact } from "@/components/sections/Contact";
 import { defaultLocale, getPortfolioContent, isLocale, locales, personalInfo, type Locale } from "@/data/portfolio";
@@ -26,6 +29,8 @@ export default async function Home({ searchParams }: HomeProps) {
 
   return (
     <main className="relative overflow-x-hidden">
+      <TronCursor />
+      <BackToTop />
       <ScrollProgress />
       <Navbar locale={locale} locales={locales} nav={copy.nav} name={personalInfo.name} />
       <Hero copy={{ hero: copy.hero, stats: copy.stats }} personalInfo={personalInfo} locale={locale} />
@@ -34,6 +39,7 @@ export default async function Home({ searchParams }: HomeProps) {
       <Projects projects={copy.projects} />
       <Skills skills={copy.skills} />
       <Education education={copy.education} />
+      <Achievements achievements={copy.achievements} />
       <Philosophy philosophy={copy.philosophy} />
       <Contact contact={copy.contact} location={copy.hero.location} />
       <Footer footer={copy.footer} personalInfo={personalInfo} />
