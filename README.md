@@ -1,6 +1,6 @@
 # Hiram Mendoza Portfolio
 
-Personal portfolio built with Next.js to present my background, projects, technical skills, and academic experience as a Computer Engineering student focused on full stack development, software architecture, and quality-driven delivery.
+Personal portfolio built with Next.js to present my background, projects, technical skills, and academic experience as a Computer Engineering Graduate focused on full stack development, software architecture, and quality-driven delivery.
 
 ## Overview
 
@@ -71,7 +71,7 @@ public/
 
 ## About Me
 
-I am a Computer Engineering student with experience in:
+I am a Computer Engineering Graduate with experience in:
 
 - Full stack development
 - Software architecture

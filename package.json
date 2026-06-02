@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@gsap/react": "latest",
+    "animejs": "^4.4.1",
     "gsap": "latest",
     "lucide-react": "latest",
     "motion": "latest",

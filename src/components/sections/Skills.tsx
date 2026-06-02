@@ -27,6 +27,7 @@ import {
 import type { PortfolioContent } from "@/data/portfolio";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Reveal } from "@/components/ui/Reveal";
+import { TronCard } from "@/components/ui/TronCard";
 
 type SkillsProps = {
   skills: PortfolioContent["skills"];
@@ -45,37 +46,35 @@ function normalize(value: string) {
 }
 
 function getSkillIcon(skill: string): LucideIcon {
-  const normalized = normalize(skill);
-
-  if (normalized.includes("react")) return Blocks;
-  if (normalized.includes("javascript")) return FileCode2;
-  if (normalized.includes("typescript")) return Braces;
-  if (normalized.includes("tailwind")) return Wind;
-  if (normalized.includes("responsive")) return MonitorSmartphone;
-  if (normalized.includes("interface") || normalized.includes("ui")) return LayoutTemplate;
-  if (normalized.includes("node")) return Waypoints;
-  if (normalized.includes("express")) return Webhook;
-  if (normalized.includes("rest")) return Webhook;
-  if (normalized.includes("valid")) return CheckCheck;
-  if (normalized.includes("permission") || normalized.includes("permiso") || normalized.includes("berecht")) return KeyRound;
-  if (normalized.includes("security") || normalized.includes("seguridad") || normalized.includes("sicher")) return Lock;
-  if (normalized.includes("swiftui")) return TabletSmartphone;
-  if (normalized === "swift") return Smartphone;
-  if (normalized.includes("ios")) return Smartphone;
-  if (normalized.includes("mvvm")) return GitBranch;
-  if (normalized.includes("sql") || normalized.includes("mysql")) return Database;
-  if (normalized.includes("model")) return Building2;
-  if (normalized.includes("aws") || normalized.includes("s3") || normalized.includes("cloud")) return Cloud;
-  if (normalized.includes("hex")) return Hexagon;
-  if (normalized.includes("clean architecture") || normalized.includes("clean")) return GitBranch;
-  if (normalized.includes("cmmi")) return Building2;
-  if (normalized.includes("scrum")) return UsersRound;
-  if (normalized === "dad") return KanbanSquare;
-  if (normalized.includes("swagger")) return FileJson2;
-  if (normalized.includes("ieee")) return CheckCheck;
-
+  const n = normalize(skill);
+  if (n.includes("react")) return Blocks;
+  if (n.includes("javascript")) return FileCode2;
+  if (n.includes("typescript")) return Braces;
+  if (n.includes("tailwind")) return Wind;
+  if (n.includes("responsive")) return MonitorSmartphone;
+  if (n.includes("interface") || n.includes("ui")) return LayoutTemplate;
+  if (n.includes("node")) return Waypoints;
+  if (n.includes("express") || n.includes("rest")) return Webhook;
+  if (n.includes("valid")) return CheckCheck;
+  if (n.includes("permission") || n.includes("permiso") || n.includes("berecht")) return KeyRound;
+  if (n.includes("security") || n.includes("seguridad") || n.includes("sicher")) return Lock;
+  if (n.includes("swiftui")) return TabletSmartphone;
+  if (n === "swift") return Smartphone;
+  if (n.includes("ios")) return Smartphone;
+  if (n.includes("mvvm")) return GitBranch;
+  if (n.includes("sql") || n.includes("mysql")) return Database;
+  if (n.includes("model")) return Building2;
+  if (n.includes("aws") || n.includes("s3") || n.includes("cloud")) return Cloud;
+  if (n.includes("hex")) return Hexagon;
+  if (n.includes("clean")) return GitBranch;
+  if (n.includes("cmmi")) return Building2;
+  if (n.includes("scrum")) return UsersRound;
+  if (n === "dad") return KanbanSquare;
+  if (n.includes("swagger")) return FileJson2;
+  if (n.includes("ieee")) return CheckCheck;
   return Code2;
 }
+
 export function Skills({ skills }: SkillsProps) {
   return (
     <section id="skills" className="section-spacing">
@@ -87,33 +86,37 @@ export function Skills({ skills }: SkillsProps) {
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {skills.groups.map((group, index) => {
             const GroupIcon = groupIcons[group.id] ?? Wrench;
-
             return (
               <Reveal key={group.title} delay={index * 0.07}>
-                <article className="glass-card rounded-[1.75rem] p-6">
+                <TronCard scan className="p-6" style={{ borderRadius: "4px" }}>
                   <div className="flex items-center gap-3">
-                    <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-sky-400/20 bg-sky-400/10 text-sky-200">
+                    <div
+                      className="inline-flex h-10 w-10 items-center justify-center border border-cyan-400/25 bg-cyan-400/8 text-cyan-300"
+                      style={{ borderRadius: "2px", boxShadow: "0 0 10px rgba(0,212,255,0.12)" }}
+                    >
                       <GroupIcon className="h-5 w-5" />
                     </div>
-                    <h3 className="text-2xl font-semibold text-white">{group.title}</h3>
+                    <h3 className="font-tron text-sm font-semibold uppercase tracking-[0.15em] text-white">{group.title}</h3>
                   </div>
 
-                  <div className="mt-5 flex flex-wrap gap-2.5">
+                  <div className="my-4 h-px bg-gradient-to-r from-cyan-400/20 via-cyan-400/8 to-transparent" />
+
+                  <div className="flex flex-wrap gap-2">
                     {group.skills.map((skill) => {
                       const SkillIcon = getSkillIcon(skill);
-
                       return (
                         <span
                           key={skill}
-                          className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-base text-slate-200"
+                          className="inline-flex items-center gap-1.5 border border-cyan-400/18 bg-cyan-400/4 px-3 py-1.5 text-[0.68rem] text-[#8ab8cc] transition hover:border-cyan-400/32 hover:text-cyan-300"
+                          style={{ borderRadius: "2px" }}
                         >
-                          <SkillIcon className="h-4 w-4 text-sky-300" />
+                          <SkillIcon className="h-3 w-3 text-cyan-400/70" />
                           {skill}
                         </span>
                       );
                     })}
                   </div>
-                </article>
+                </TronCard>
               </Reveal>
             );
           })}
