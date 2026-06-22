@@ -2,8 +2,8 @@ import { createTranslator } from "use-intl/core";
 import { personalInfo } from "@/config/site";
 import { defaultLocale, getMessages, isLocale, locales, type Locale } from "@/lib/i18n";
 
-type ContactIcon = "Mail" | "Linkedin" | "Instagram" | "Github";
-type ProjectId = "altertex" | "wushu" | "workflow" | "wc2026" | "defungi";
+type ContactIcon = "Mail" | "Linkedin" | "Github";
+type ProjectId = "altertex" | "wushu" | "wc2026" | "defungi";
 type SkillGroupId = "frontend" | "backend" | "mobile" | "data" | "architectureQuality" | "machineLearning";
 
 type AchievementId = "exchange" | "english" | "german" | "ios" | "cmmi" | "architecture";
@@ -27,7 +27,6 @@ export type PortfolioContent = {
     tagline: string;
     title: string;
     subtitle: string;
-    availability: string;
     location: string;
     profile: string;
     snapshot: string;
@@ -139,10 +138,10 @@ export type PortfolioContent = {
 };
 
 const statConfigs = [
-  { value: "E2E", labelKey: "stats.endToEndDelivery" },
+  { value: "5", labelKey: "stats.projectsDelivered" },
   { value: "A2", labelKey: "stats.germanLevel" },
   { value: "C1", labelKey: "stats.englishLevel" },
-  { value: "3", labelKey: "stats.architectureApproaches" },
+  { value: "iOS", labelKey: "stats.iosDelivery" },
 ] as const;
 
 const aboutPillKeys = [
@@ -156,7 +155,7 @@ const aboutCardIds = [
   "architectureMindset",
   "executionAcrossLayers",
   "qualityOrientation",
-  "professionalGrowth",
+  "practicalLearning",
 ] as const;
 
 const timelineItems = [
@@ -176,7 +175,7 @@ const projectItems = [
   {
     id: "altertex",
     image: "/images/project-altertex.svg",
-    tags: ["React", "Node.js", "MySQL", "REST APIs", "2FA", "Architecture"],
+    tags: ["React", "Node.js", "MySQL", "REST APIs", "RBAC", "2FA", "Hexagonal Arch."],
     links: [
       { label: "Frontend", href: "https://github.com/CodeAnd-Co/Frontend-Text-Lines" },
       { label: "Backend", href: "https://github.com/CodeAnd-Co/Backend-textiles" },
@@ -188,19 +187,13 @@ const projectItems = [
   {
     id: "wushu",
     image: "/images/project-wushu.svg",
-    tags: ["SwiftUI", "Swift", "MVVM", "Testing", "UX"],
+    tags: ["SwiftUI", "Swift", "MVVM", "TestFlight", "Scrum", "UX"],
     links: [
       { label: "iOS App", href: "https://github.com/Academia-Mexicana-de-Wushu-Queretaro/iOS" },
     ],
     roleKey: "timeline.items.wushu.role" as const,
     companyKey: "timeline.items.wushu.company" as const,
     periodKey: "timeline.items.wushu.period" as const,
-  },
-  {
-    id: "workflow",
-    image: "/images/project-architecture.svg",
-    tags: ["Clean Architecture", "Hexagonal", "CMMI", "IEEE 829", "ESLint"],
-    links: [] as Array<{ label: string; href: string }>,
   },
   {
     id: "wc2026",
@@ -213,7 +206,7 @@ const projectItems = [
   {
     id: "defungi",
     image: "/images/project-defungi.svg",
-    tags: ["Python", "Machine Learning", "Classification", "Jupyter", "scikit-learn"],
+    tags: ["Python", "scikit-learn", "Classification", "Jupyter", "Feature Engineering"],
     links: [
       { label: "GitHub", href: "https://github.com/Hiram10tec/DeFungi-ML" },
     ],
@@ -224,17 +217,17 @@ const skillGroups = [
   {
     id: "frontend",
     titleKey: "skills.groups.frontend",
-    skills: ["React", "JavaScript", "TypeScript", "Tailwind CSS", "Responsive interfaces", "UI structure"],
+    skills: ["React", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS", "HTML / CSS"],
   },
   {
     id: "backend",
     titleKey: "skills.groups.backend",
-    skills: ["Node.js", "Express", "REST APIs", "Validation", "Permission control", "Security flows"],
+    skills: ["Node.js", "Express", "REST APIs", "JWT / 2FA", "RBAC", "bcrypt", "Input validation"],
   },
   {
     id: "mobile",
     titleKey: "skills.groups.mobile",
-    skills: ["Swift", "SwiftUI", "MVVM", "iOS app delivery"],
+    skills: ["Swift", "SwiftUI", "MVVM", "TestFlight delivery"],
   },
   {
     id: "data",
@@ -249,7 +242,7 @@ const skillGroups = [
   {
     id: "machineLearning",
     titleKey: "skills.groups.machineLearning",
-    skills: ["Python", "scikit-learn", "Pandas", "NumPy", "Machine Learning", "Jupyter", "Data Analysis"],
+    skills: ["Python", "scikit-learn", "Pandas", "NumPy", "Jupyter", "Classification", "Feature Engineering"],
   },
 ] as const;
 
@@ -278,12 +271,6 @@ const contactLinkConfigs = [
     icon: "Github" as const,
     href: personalInfo.github,
     value: "Hiram10tec",
-  },
-  {
-    id: "instagram",
-    icon: "Instagram" as const,
-    href: personalInfo.instagram,
-    value: "hiram.10",
   },
 ] as const;
 
@@ -319,7 +306,6 @@ export function getPortfolioContent(locale: Locale): PortfolioContent {
       tagline: t("hero.tagline"),
       title: t("hero.title"),
       subtitle: t("hero.subtitle"),
-      availability: t("hero.availability"),
       location: t("hero.location"),
       profile: t("hero.profile"),
       snapshot: t("hero.snapshot"),
@@ -378,7 +364,7 @@ export function getPortfolioContent(locale: Locale): PortfolioContent {
         highlight: t(`projects.items.${item.id}.highlight`),
         tags: [...item.tags],
         image: item.image,
-        links: item.links as Array<{ label: string; href: string }>,
+        links: [...item.links] as Array<{ label: string; href: string }>,
         ...("roleKey" in item ? {
           role: t(item.roleKey),
           company: t(item.companyKey),

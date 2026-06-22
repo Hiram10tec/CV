@@ -26,7 +26,7 @@ export function Projects({ projects }: ProjectsProps) {
           <SectionTitle eyebrow={projects.eyebrow} title={projects.title} description={projects.description} />
         </Reveal>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 lg:grid-cols-2">
           {projects.items.map((project, index) => {
             const Icon = projectIcons[project.id];
             return (
