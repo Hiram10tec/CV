@@ -18,7 +18,7 @@
     "title": "Graduierte Informatikingenieur und Full-Stack-Entwickler",
     "subtitle": "Ich entwickle akademische und praxisnahe Softwareprojekte mit klarer Struktur, sicherer Backend-Logik und Interfaces, die auch unter realen Anforderungen verständlich bleiben.",
     "availability": "Offen für Praktika, Einstiegspositionen und projektbasierte Zusammenarbeit.",
-    "location": "Queretaro, Mexiko",
+    "location": "San Luis Potosi, Mexiko",
     "profile": "Profil",
     "snapshot": "Überblick",
     "quickNote": "Fokus auf Softwarearchitektur, Full-Stack-Umsetzung und disziplinierte Engineering-Praktiken.",
@@ -74,7 +74,7 @@
       "altertex": {
         "company": "Altertex modulares Enterprise-System",
         "role": "Softwarearchitekt und Full-Stack-Entwickler",
-        "location": "Queretaro, Mexiko",
+        "location": "San Luis Potosi, Mexiko",
         "period": "Feb 2025 - Jun 2025",
         "summary": "Ein groß angelegtes akademisches Enterprise-Projekt, umgesetzt mit CMMI-orientierten Prozessen und einem Liefermodell, das professionelle Softwarearbeit simulierte.",
         "bullet1": "Ich entwarf die Lösung mit Hexagonaler Architektur und Clean Architecture, um Modularität und Wartbarkeit sicherzustellen.",
@@ -86,7 +86,7 @@
       "wushu": {
         "company": "App der Queretaro Wushu Kung Fu Association",
         "role": "Full-Stack-Entwickler für iOS-Auslieferung",
-        "location": "Queretaro, Mexiko",
+        "location": "San Luis Potosi, Mexiko",
         "period": "Sep 2024 - Dez 2024",
         "summary": "Ein Mobile-Projekt mit Fokus auf Analyse, Architektur, Implementierung, Tests und Vorbereitung der iOS-Auslieferung.",
         "bullet1": "Ich analysierte funktionale und nicht-funktionale Anforderungen vor der Implementierung.",
@@ -209,10 +209,6 @@
       "linkedin": {
         "label": "LinkedIn",
         "note": "Berufliches Profil, Hintergrund und akademische Projekterfahrung."
-      },
-      "phone": {
-        "label": "Telefon",
-        "note": "Geeignet für Interviews und direkte Gespräche zu Rollen."
       },
       "github": {
         "label": "GitHub",

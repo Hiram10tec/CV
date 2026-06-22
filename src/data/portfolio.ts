@@ -2,7 +2,7 @@ import { createTranslator } from "use-intl/core";
 import { personalInfo } from "@/config/site";
 import { defaultLocale, getMessages, isLocale, locales, type Locale } from "@/lib/i18n";
 
-type ContactIcon = "Mail" | "Linkedin" | "Phone" | "Instagram" | "Github";
+type ContactIcon = "Mail" | "Linkedin" | "Instagram" | "Github";
 type ProjectId = "altertex" | "wushu" | "workflow" | "wc2026" | "defungi";
 type SkillGroupId = "frontend" | "backend" | "mobile" | "data" | "architectureQuality" | "machineLearning";
 
@@ -81,6 +81,9 @@ export type PortfolioContent = {
       tags: string[];
       image: string;
       links: Array<{ label: string; href: string }>;
+      role?: string;
+      company?: string;
+      period?: string;
     }>;
   };
   skills: {
@@ -178,6 +181,9 @@ const projectItems = [
       { label: "Frontend", href: "https://github.com/CodeAnd-Co/Frontend-Text-Lines" },
       { label: "Backend", href: "https://github.com/CodeAnd-Co/Backend-textiles" },
     ],
+    roleKey: "timeline.items.altertex.role" as const,
+    companyKey: "timeline.items.altertex.company" as const,
+    periodKey: "timeline.items.altertex.period" as const,
   },
   {
     id: "wushu",
@@ -186,6 +192,9 @@ const projectItems = [
     links: [
       { label: "iOS App", href: "https://github.com/Academia-Mexicana-de-Wushu-Queretaro/iOS" },
     ],
+    roleKey: "timeline.items.wushu.role" as const,
+    companyKey: "timeline.items.wushu.company" as const,
+    periodKey: "timeline.items.wushu.period" as const,
   },
   {
     id: "workflow",
@@ -269,12 +278,6 @@ const contactLinkConfigs = [
     icon: "Github" as const,
     href: personalInfo.github,
     value: "Hiram10tec",
-  },
-  {
-    id: "phone",
-    icon: "Phone" as const,
-    href: personalInfo.phoneHref,
-    value: personalInfo.phone,
   },
   {
     id: "instagram",
@@ -376,6 +379,11 @@ export function getPortfolioContent(locale: Locale): PortfolioContent {
         tags: [...item.tags],
         image: item.image,
         links: item.links as Array<{ label: string; href: string }>,
+        ...("roleKey" in item ? {
+          role: t(item.roleKey),
+          company: t(item.companyKey),
+          period: t(item.periodKey),
+        } : {}),
       })),
     },
     skills: {

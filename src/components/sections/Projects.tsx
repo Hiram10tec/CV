@@ -77,6 +77,15 @@ export function Projects({ projects }: ProjectsProps) {
                         <ArrowUpRight className="h-4 w-4" />
                       </span>
                     </div>
+                    {project.role && (
+                      <div className="mt-2 flex flex-wrap items-center gap-2">
+                        <span className="font-tron text-[0.6rem] uppercase tracking-[0.18em] text-cyan-300">{project.role}</span>
+                        <span className="text-cyan-400/30">·</span>
+                        <span className="font-tron text-[0.6rem] uppercase tracking-[0.18em] text-[#8ab8cc]">{project.company}</span>
+                        <span className="text-cyan-400/30">·</span>
+                        <span className="font-tron text-[0.6rem] uppercase tracking-[0.18em] text-[#8ab8cc]/60">{project.period}</span>
+                      </div>
+                    )}
                     <p className="mt-3 text-sm leading-7 text-[#8ab8cc]">{project.description}</p>
 
                     <div className="mt-5 border border-cyan-400/12 bg-cyan-400/3 p-4" style={{ borderRadius: "2px" }}>

@@ -43,9 +43,6 @@ html {
   overscroll-behavior-y: none;
 }
 
-@media (pointer: fine) {
-  *, *::before, *::after { cursor: none !important; }
-}
 
 body {
   background:

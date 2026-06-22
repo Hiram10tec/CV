@@ -18,7 +18,7 @@
     "title": "Graduado en Ingeniería en Computación y Desarrollador Full Stack",
     "subtitle": "Construyo proyectos académicos y de estilo profesional con buena estructura, lógica backend segura e interfaces claras incluso bajo restricciones reales.",
     "availability": "Disponible para internships, posiciones de recién graduado y colaboraciones por proyecto.",
-    "location": "Querétaro, México",
+    "location": "San Luis Potosí, México",
     "profile": "Perfil",
     "snapshot": "Resumen",
     "quickNote": "Enfocado en arquitectura de software, entrega full stack y prácticas de ingeniería disciplinadas.",
@@ -74,7 +74,7 @@
       "altertex": {
         "company": "Altertex sistema empresarial modular",
         "role": "Arquitecto de Software y Desarrollador Full Stack",
-        "location": "Querétaro, México",
+        "location": "San Luis Potosí, México",
         "period": "Feb 2025 - Jun 2025",
         "summary": "Proyecto empresarial académico a gran escala ejecutado con procesos orientados a CMMI y un modelo de entrega que simuló trabajo profesional de software.",
         "bullet1": "Diseñé la solución con Arquitectura Hexagonal y Clean Architecture para mantener el sistema modular y mantenible.",
@@ -86,7 +86,7 @@
       "wushu": {
         "company": "App de la Asociación Queretana de Wushu Kung Fu",
         "role": "Desarrollador Full Stack para entrega iOS",
-        "location": "Querétaro, México",
+        "location": "San Luis Potosí, México",
         "period": "Sep 2024 - Dic 2024",
         "summary": "Proyecto móvil enfocado en análisis, arquitectura, implementación, pruebas y preparación de despliegue para iOS.",
         "bullet1": "Analicé requerimientos funcionales y no funcionales antes de pasar a implementación.",
@@ -209,10 +209,6 @@
       "linkedin": {
         "label": "LinkedIn",
         "note": "Perfil profesional, trayectoria y proyectos académicos."
-      },
-      "phone": {
-        "label": "Teléfono",
-        "note": "Útil para entrevistas y conversaciones directas sobre vacantes."
       },
       "github": {
         "label": "GitHub",

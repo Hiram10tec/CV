@@ -35,7 +35,6 @@ export function Navbar({ locale, locales, nav, name }: NavbarProps) {
 
   const navItems = [
     { label: nav.about, href: "#about" },
-    { label: nav.timeline, href: "#experience" },
     { label: nav.projects, href: "#projects" },
     { label: nav.skills, href: "#skills" },
     { label: nav.education, href: "#education" },
