@@ -74,13 +74,7 @@ export function Hero({ copy, personalInfo, locale }: HeroProps) {
               <MapPin className="h-3 w-3 text-violet-400" />
               {copy.hero.location}
             </span>
-            <span
-              className="inline-flex items-center gap-2 border border-cyan-500/20 bg-cyan-500/5 px-4 py-2 font-tron text-[0.68rem] uppercase tracking-[0.15em] text-cyan-300/80"
-              style={{ borderRadius: "2px" }}
-            >
-              <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 animate-neon-pulse" />
-              {copy.hero.availability}
-            </span>
+
           </motion.div>
 
           <motion.div

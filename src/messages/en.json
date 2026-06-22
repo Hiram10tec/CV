@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Hiram Mendoza | Portfolio",
-    "description": "Portfolio of Hiram Mendoza, computer engineering graduate focused on architecture, full stack development, and software quality."
+    "description": "Portfolio of Hiram Mendoza, software engineer focused on full-stack development, software architecture, and quality-driven delivery."
   },
   "nav": {
     "about": "About Me",
@@ -14,10 +14,9 @@
     "languageLabel": "Language"
   },
   "hero": {
-    "tagline": "Architecture, execution, and product thinking.",
-    "title": "Computer Engineering Graduate and Full Stack Developer",
-    "subtitle": "I build academic and professional-style software projects with strong structure, secure backend logic, and interfaces that stay clear under real constraints.",
-    "availability": "Open to internships, graduate roles, and project-based opportunities.",
+    "tagline": "Architecture, execution, and disciplined delivery.",
+    "title": "Full Stack Developer & Software Engineer",
+    "subtitle": "I build software with strong structure, secure backend logic, and interfaces that stay clear under real constraints.",
     "location": "San Luis Potosi, Mexico",
     "profile": "Profile",
     "snapshot": "Snapshot",
@@ -27,15 +26,15 @@
     "contactMe": "Contact me"
   },
   "stats": {
-    "endToEndDelivery": "End-to-end delivery",
+    "projectsDelivered": "Projects delivered",
     "germanLevel": "German level",
     "englishLevel": "English level",
-    "architectureApproaches": "Architecture approaches applied"
+    "iosDelivery": "iOS app to TestFlight"
   },
   "about": {
     "eyebrow": "About Me",
     "title": "I work best where architecture, implementation, and quality all matter.",
-    "description": "I am a computer engineering graduate with hands-on work in backend services, frontend development, software architecture, and quality-driven delivery. My strongest projects come from academic environments that were executed with professional standards.",
+    "description": "I work across backend services, frontend development, software architecture, and quality-driven delivery. My projects span full-stack web systems, iOS mobile applications, and machine learning — built with disciplined engineering practices from requirements through deployment.",
     "focusLabel": "Current focus",
     "imageBadge": "Engineering profile",
     "imageCaptionTitle": "What I bring",
@@ -59,9 +58,9 @@
         "title": "Quality orientation",
         "description": "I work with reviews, standards, and documentation so the project remains maintainable after delivery."
       },
-      "professionalGrowth": {
-        "title": "Professional growth",
-        "description": "I am looking for teams where I can contribute early and keep raising the technical bar."
+      "practicalLearning": {
+        "title": "Fast practical learning",
+        "description": "I adapt quickly to new stacks — from iOS delivery in SwiftUI to ML classification in Python to full-stack systems in Node.js and React."
       }
     }
   },
@@ -76,24 +75,24 @@
         "role": "Software Architect and Full Stack Developer",
         "location": "San Luis Potosi, Mexico",
         "period": "Feb 2025 - Jun 2025",
-        "summary": "A large-scale academic enterprise project executed with CMMI-oriented processes and a delivery model that simulated professional software work.",
+        "summary": "A large-scale enterprise management system executed with CMMI-oriented processes and a delivery model that reflected professional software engineering practices.",
         "bullet1": "Designed the solution using Hexagonal Architecture and Clean Architecture to keep the system modular and maintainable.",
         "bullet2": "Built backend services, data models, and frontend modules for users, roles, categories, quotas, and product flows.",
-        "bullet3": "Implemented permission control, validation rules, and security-focused API behavior.",
-        "bullet4": "Worked with formal documentation, structured reviews, and quality checkpoints across the project.",
+        "bullet3": "Implemented RBAC permission control, 2FA, input validation, and security-focused API behavior.",
+        "bullet4": "Worked with Swagger-documented APIs, formal documentation, structured reviews, and quality checkpoints across the project.",
         "bullet5": "Took an early leadership role to support estimation adjustments and coordination with the external training partner."
       },
       "wushu": {
         "company": "Queretaro Wushu Kung Fu Association app",
         "role": "Full Stack Developer for iOS delivery",
-        "location": "San Luis Potosi, Mexico",
+        "location": "Queretaro, Mexico",
         "period": "Sep 2024 - Dec 2024",
-        "summary": "A mobile app project centered on analysis, architecture, implementation, testing, and deployment preparation for iOS.",
+        "summary": "A mobile app project covering the full cycle from requirements and architecture to implementation, testing, and TestFlight deployment.",
         "bullet1": "Analyzed functional and non-functional requirements before moving into implementation.",
         "bullet2": "Designed the mobile architecture with MVVM to keep features scalable and responsibilities separated.",
         "bullet3": "Implemented SwiftUI views and app flows with attention to usability and performance.",
         "bullet4": "Validated the product through testing and iterative improvements under a Scrum workflow.",
-        "bullet5": "Prepared the application for deployment while keeping quality and security in scope."
+        "bullet5": "Prepared the application for TestFlight deployment while keeping quality and security in scope."
       }
     }
   },
@@ -104,7 +103,7 @@
       "exchange": { "title": "International Exchange", "description": "University of Twente, Netherlands — 2025–2026.", "badge": "Twente" },
       "english": { "title": "English C1", "description": "Professional working proficiency.", "badge": "C1" },
       "german": { "title": "German A2", "description": "Functional communication, actively improving.", "badge": "A2" },
-      "ios": { "title": "iOS App Delivered", "description": "Full cycle from requirements to TestFlight-ready deployment.", "badge": "iOS" },
+      "ios": { "title": "iOS App to TestFlight", "description": "Full cycle from requirements to TestFlight-ready deployment.", "badge": "iOS" },
       "cmmi": { "title": "CMMI-level Process", "description": "Applied formal software lifecycle practices in enterprise-scale project.", "badge": "CMMI" },
       "architecture": { "title": "Clean + Hexagonal Architecture", "description": "Implemented across full stack enterprise system.", "badge": "Arch" }
     }
@@ -120,33 +119,27 @@
     "items": {
       "altertex": {
         "title": "Altertex enterprise platform",
-        "description": "A modular management system designed for maintainability, permission control, and secure business workflows.",
-        "result": "Delivered enterprise-style modules for users, roles, quotas, categories, products, and protected admin flows.",
-        "highlight": "Keeping permissions, validation rules, and admin workflows consistent without making the system modules rigid."
+        "description": "A modular management system built for maintainability, permission control, and secure business workflows.",
+        "result": "Delivered modular backend and frontend with RBAC, 2FA, Swagger-documented REST APIs, and formal test coverage across user, product, quota, and category management flows.",
+        "highlight": "Keeping RBAC rules, validation logic, and admin workflows consistent across modules without introducing tight coupling."
       },
       "wushu": {
         "title": "Wushu iOS application",
-        "description": "An iOS app planned from requirements through architecture, interface construction, testing, and deployment readiness.",
-        "result": "Produced a cleaner MVVM-based mobile experience with scalable feature organization.",
-        "highlight": "Turning requirements and user flows into a clear, scalable mobile app prepared for testing."
-      },
-      "workflow": {
-        "title": "Architecture-driven workflow",
-        "description": "A repeatable way of working that connects architecture choices, documentation, code quality, and implementation speed.",
-        "result": "Helped keep projects structured across frontend, backend, validation, and review processes.",
-        "highlight": "Aligning architecture, documentation, and quality without slowing implementation or making the process heavy."
+        "description": "An iOS app taken from requirements through architecture, interface construction, testing, and TestFlight deployment.",
+        "result": "Delivered a SwiftUI MVVM app through the full requirements-to-TestFlight cycle in a 4-month sprint, with structured testing and Scrum-driven iteration.",
+        "highlight": "Turning requirements and user flows into a scalable mobile architecture while keeping the app deployment-ready at every sprint."
       },
       "wc2026": {
         "title": "World Cup 2026 Match Predictor",
         "description": "A machine learning model that predicts World Cup 2026 match outcomes using historical match data, team statistics, and tournament context.",
-        "result": "Built a predictive pipeline with ensemble ML methods to forecast match results across the tournament bracket.",
+        "result": "Trained and evaluated ensemble classifiers on historical FIFA match data to forecast tournament match outcomes across the bracket.",
         "highlight": "Engineering meaningful features from historical football data to produce reliable predictions across diverse team matchups."
       },
       "defungi": {
-        "title": "DeFungi ML",
-        "description": "A machine learning classifier that identifies and categorizes fungal species from biological feature data, enabling automated detection.",
-        "result": "Delivered a classification model capable of accurately identifying fungal categories from structured biological feature sets.",
-        "highlight": "Selecting and engineering features that distinguish similar fungal species while keeping the model generalizable."
+        "title": "DeFungi ML Classifier",
+        "description": "A machine learning classifier that identifies and categorizes fungal species from structured biological feature data.",
+        "result": "Trained and validated a classification model that accurately identifies fungal species categories from biological feature sets.",
+        "highlight": "Selecting and engineering features that distinguish similar fungal species while keeping the model generalizable to unseen data."
       }
     }
   },
@@ -181,7 +174,7 @@
         "degree": "Academic exchange in Computer Engineering",
         "location": "Enschede, Netherlands",
         "period": "Aug 2025 - Feb 2026",
-        "description": "International academic experience that strengthened adaptability, autonomy, and work across multicultural contexts."
+        "description": "Advanced coursework in computer engineering at a top Dutch technical university. Developed technical depth and research-oriented thinking in a fully English-speaking, multicultural academic environment."
       }
     }
   },
@@ -196,11 +189,11 @@
   "contact": {
     "eyebrow": "Contact",
     "title": "If your team needs someone who can build and learn fast, let's talk.",
-    "description": "I am especially interested in internships, graduate roles, and teams that value clean implementation, architecture, and product quality.",
+    "description": "I am especially interested in internships, junior engineering roles, and teams that value clean implementation, architecture, and software quality.",
     "basedIn": "Based in",
-    "availabilityCard": "Available for internships, graduate opportunities, and technical collaboration.",
+    "availabilityCard": "Available for internships, junior engineering roles, and technical collaboration.",
     "quickLabel": "Best fit",
-    "quickText": "Backend, full stack, and architecture-oriented roles where I can contribute with discipline and keep growing fast.",
+    "quickText": "Backend, full stack, and architecture-oriented roles — or data and ML engineering contexts where clean pipelines and structured thinking matter.",
     "links": {
       "email": {
         "label": "Email",
@@ -208,15 +201,11 @@
       },
       "linkedin": {
         "label": "LinkedIn",
-        "note": "Professional profile, background, and academic project history."
+        "note": "Professional profile, background, and project history."
       },
       "github": {
         "label": "GitHub",
         "note": "Source code, projects, and open contributions."
-      },
-      "instagram": {
-        "label": "Instagram",
-        "note": "A more personal channel with daily updates and creative context."
       }
     }
   },

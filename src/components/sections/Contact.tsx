@@ -1,10 +1,10 @@
-import { ArrowUpRight, BriefcaseBusiness, Github, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowUpRight, BriefcaseBusiness, Github, Linkedin, Mail, MapPin } from "lucide-react";
 import type { PortfolioContent } from "@/data/portfolio";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Reveal } from "@/components/ui/Reveal";
 import { TronCard } from "@/components/ui/TronCard";
 
-const icons = { Mail, Linkedin, Github, Phone, Instagram } as const;
+const icons = { Mail, Linkedin, Github } as const;
 
 type ContactProps = {
   contact: PortfolioContent["contact"];

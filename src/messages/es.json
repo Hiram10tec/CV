@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Hiram Mendoza | Portafolio",
-    "description": "Portafolio de Hiram Mendoza, graduado en Ingeniería en Computación enfocado en arquitectura, desarrollo full stack y calidad de software."
+    "description": "Portafolio de Hiram Mendoza, ingeniero de software enfocado en desarrollo full stack, arquitectura de software y entrega orientada a calidad."
   },
   "nav": {
     "about": "Perfil",
@@ -14,10 +14,9 @@
     "languageLabel": "Idioma"
   },
   "hero": {
-    "tagline": "Arquitectura, ejecución y visión de producto.",
-    "title": "Graduado en Ingeniería en Computación y Desarrollador Full Stack",
-    "subtitle": "Construyo proyectos académicos y de estilo profesional con buena estructura, lógica backend segura e interfaces claras incluso bajo restricciones reales.",
-    "availability": "Disponible para internships, posiciones de recién graduado y colaboraciones por proyecto.",
+    "tagline": "Arquitectura, ejecución y entrega disciplinada.",
+    "title": "Desarrollador Full Stack e Ingeniero de Software",
+    "subtitle": "Construyo software con buena estructura, lógica backend segura e interfaces claras incluso bajo restricciones reales.",
     "location": "San Luis Potosí, México",
     "profile": "Perfil",
     "snapshot": "Resumen",
@@ -27,15 +26,15 @@
     "contactMe": "Contactarme"
   },
   "stats": {
-    "endToEndDelivery": "Entrega end-to-end",
+    "projectsDelivered": "Proyectos entregados",
     "germanLevel": "Nivel de alemán",
     "englishLevel": "Nivel de inglés",
-    "architectureApproaches": "Enfoques de arquitectura aplicados"
+    "iosDelivery": "App iOS en TestFlight"
   },
   "about": {
     "eyebrow": "Perfil",
     "title": "Trabajo mejor donde importan la arquitectura, la implementación y la calidad.",
-    "description": "Soy graduado en Ingeniería en Computación con experiencia práctica en servicios backend, desarrollo frontend, arquitectura de software y entrega guiada por estándares de calidad. Mis proyectos más sólidos nacen en entornos académicos ejecutados con un nivel profesional.",
+    "description": "Trabajo en servicios backend, desarrollo frontend, arquitectura de software y entrega orientada a calidad. Mis proyectos abarcan sistemas web full stack, aplicaciones móviles iOS y machine learning, construidos con prácticas de ingeniería disciplinadas desde los requerimientos hasta el despliegue.",
     "focusLabel": "Enfoque actual",
     "imageBadge": "Perfil técnico",
     "imageCaptionTitle": "Lo que aporto",
@@ -59,9 +58,9 @@
         "title": "Orientación a calidad",
         "description": "Trabajo con revisiones, estándares y documentación para que el proyecto se mantenga después de la entrega."
       },
-      "professionalGrowth": {
-        "title": "Crecimiento profesional",
-        "description": "Busco equipos donde pueda aportar desde temprano y seguir elevando mi nivel técnico."
+      "practicalLearning": {
+        "title": "Aprendizaje práctico rápido",
+        "description": "Me adapto rápido a nuevas tecnologías: desde entrega iOS en SwiftUI hasta clasificación ML en Python y sistemas full stack en Node.js y React."
       }
     }
   },
@@ -76,24 +75,24 @@
         "role": "Arquitecto de Software y Desarrollador Full Stack",
         "location": "San Luis Potosí, México",
         "period": "Feb 2025 - Jun 2025",
-        "summary": "Proyecto empresarial académico a gran escala ejecutado con procesos orientados a CMMI y un modelo de entrega que simuló trabajo profesional de software.",
+        "summary": "Sistema de gestión empresarial a gran escala ejecutado con procesos orientados a CMMI y un modelo de entrega que reflejó las prácticas profesionales de ingeniería de software.",
         "bullet1": "Diseñé la solución con Arquitectura Hexagonal y Clean Architecture para mantener el sistema modular y mantenible.",
         "bullet2": "Construí servicios backend, modelos de datos y módulos frontend para usuarios, roles, categorías, cuotas y flujo de productos.",
-        "bullet3": "Implementé control de permisos, reglas de validación y comportamiento de API con enfoque en seguridad.",
-        "bullet4": "Trabajé con documentación formal, revisiones estructuradas y puntos de control de calidad.",
+        "bullet3": "Implementé control de permisos RBAC, 2FA, validación de entradas y comportamiento de API con enfoque en seguridad.",
+        "bullet4": "Trabajé con APIs documentadas en Swagger, documentación formal, revisiones estructuradas y puntos de control de calidad.",
         "bullet5": "Tomé un rol de liderazgo en la etapa inicial para apoyar reestimaciones y coordinación con el socio externo de capacitación."
       },
       "wushu": {
         "company": "App de la Asociación Queretana de Wushu Kung Fu",
         "role": "Desarrollador Full Stack para entrega iOS",
-        "location": "San Luis Potosí, México",
+        "location": "Querétaro, México",
         "period": "Sep 2024 - Dic 2024",
-        "summary": "Proyecto móvil enfocado en análisis, arquitectura, implementación, pruebas y preparación de despliegue para iOS.",
+        "summary": "Proyecto móvil con ciclo completo: de requerimientos y arquitectura hasta implementación, pruebas y despliegue en TestFlight.",
         "bullet1": "Analicé requerimientos funcionales y no funcionales antes de pasar a implementación.",
         "bullet2": "Diseñé la arquitectura móvil con MVVM para mantener escalabilidad y separación clara de responsabilidades.",
         "bullet3": "Implementé vistas y flujos en SwiftUI con atención a usabilidad y rendimiento.",
         "bullet4": "Validé el producto con pruebas y mejoras iterativas bajo una dinámica Scrum.",
-        "bullet5": "Preparé la aplicación para despliegue manteniendo calidad y seguridad en alcance."
+        "bullet5": "Preparé la aplicación para despliegue en TestFlight manteniendo calidad y seguridad en alcance."
       }
     }
   },
@@ -104,7 +103,7 @@
       "exchange": { "title": "Intercambio Internacional", "description": "University of Twente, Países Bajos — 2025–2026.", "badge": "Twente" },
       "english": { "title": "Inglés C1", "description": "Competencia profesional en inglés.", "badge": "C1" },
       "german": { "title": "Alemán A2", "description": "Comunicación funcional, en mejora continua.", "badge": "A2" },
-      "ios": { "title": "App iOS Entregada", "description": "Ciclo completo desde requerimientos hasta despliegue listo para TestFlight.", "badge": "iOS" },
+      "ios": { "title": "App iOS en TestFlight", "description": "Ciclo completo desde requerimientos hasta despliegue en TestFlight.", "badge": "iOS" },
       "cmmi": { "title": "Proceso nivel CMMI", "description": "Prácticas formales del ciclo de vida en proyecto empresarial.", "badge": "CMMI" },
       "architecture": { "title": "Clean + Hexagonal Architecture", "description": "Implementada en sistema empresarial full stack.", "badge": "Arch" }
     }
@@ -113,40 +112,34 @@
     "eyebrow": "Proyectos",
     "title": "Trabajos seleccionados y los resultados que generaron.",
     "description": "",
-    "badge": "",
+    "badge": "Proyecto seleccionado",
     "resultLabel": "Resultado",
     "highlightLabel": "Reto técnico",
     "reposLabel": "Repositorios",
     "items": {
       "altertex": {
         "title": "Plataforma empresarial Altertex",
-        "description": "Sistema modular de gestión diseñado para mantenibilidad, control de permisos y flujos de negocio seguros.",
-        "result": "Entregó módulos tipo empresarial para usuarios, roles, cuotas, categorías, productos y flujos administrativos protegidos.",
-        "highlight": "Mantener permisos, validaciones y flujos administrativos consistentes sin volver rígidos los módulos del sistema."
+        "description": "Sistema modular de gestión construido para mantenibilidad, control de permisos y flujos de negocio seguros.",
+        "result": "Entregó backend y frontend modulares con RBAC, 2FA, APIs REST documentadas con Swagger y cobertura formal de pruebas, cubriendo flujos de usuarios, productos, cuotas y categorías.",
+        "highlight": "Mantener reglas RBAC, lógica de validación y flujos administrativos consistentes entre módulos sin generar acoplamiento rígido."
       },
       "wushu": {
         "title": "Aplicación iOS Wushu",
-        "description": "App iOS planeada desde requerimientos hasta arquitectura, construcción de interfaces, pruebas y preparación de despliegue.",
-        "result": "Produjo una experiencia móvil basada en MVVM con organización escalable de funcionalidades.",
-        "highlight": "Convertir requerimientos y flujos de usuario en una app móvil clara, escalable y preparada para pruebas."
-      },
-      "workflow": {
-        "title": "Flujo de trabajo guiado por arquitectura",
-        "description": "Forma de trabajo repetible que conecta decisiones de arquitectura, documentación, calidad de código y velocidad de implementación.",
-        "result": "Ayudó a mantener proyectos estructurados entre frontend, backend, validaciones y revisiones.",
-        "highlight": "Alinear arquitectura, documentación y calidad sin frenar la implementación ni hacer el proceso más pesado."
+        "description": "App iOS llevada desde requerimientos hasta arquitectura, construcción de interfaces, pruebas y despliegue en TestFlight.",
+        "result": "Entregó una app SwiftUI con MVVM en ciclo completo hasta TestFlight en un sprint de 4 meses, con pruebas estructuradas e iteración Scrum.",
+        "highlight": "Convertir requerimientos y flujos de usuario en una arquitectura móvil escalable manteniendo la app lista para despliegue en cada sprint."
       },
       "wc2026": {
-        "title": "Predictor de partidos — Mundial 2026",
-        "description": "Modelo de machine learning que predice resultados de partidos del Mundial 2026 usando datos históricos, estadísticas de equipos y contexto del torneo.",
-        "result": "Construí un pipeline predictivo con métodos de ensemble ML para pronosticar resultados a lo largo del bracket del torneo.",
-        "highlight": "Ingeniería de features significativas desde datos históricos de fútbol para lograr predicciones confiables entre distintos equipos."
+        "title": "Predictor de partidos del Mundial 2026",
+        "description": "Modelo de machine learning que predice resultados del Mundial 2026 a partir de datos históricos, estadísticas por equipo y contexto del torneo.",
+        "result": "Entrenó y evaluó clasificadores ensemble sobre datos históricos de la FIFA para pronosticar resultados de partidos en el bracket del torneo.",
+        "highlight": "Generar características significativas a partir de datos históricos de fútbol para producir predicciones confiables entre equipos de distinto nivel."
       },
       "defungi": {
-        "title": "DeFungi ML",
-        "description": "Clasificador de machine learning que identifica y categoriza especies de hongos a partir de datos biológicos, habilitando detección automatizada.",
-        "result": "Entregué un modelo de clasificación capaz de identificar con precisión categorías de hongos desde conjuntos de features biológicas estructuradas.",
-        "highlight": "Selección e ingeniería de features que distinguen especies fúngicas similares manteniendo la capacidad de generalización del modelo."
+        "title": "DeFungi ML Classifier",
+        "description": "Clasificador de machine learning que identifica y categoriza especies de hongos a partir de datos de características biológicas estructuradas.",
+        "result": "Entrenó y validó un modelo de clasificación que identifica con precisión categorías de hongos a partir de conjuntos de características biológicas.",
+        "highlight": "Seleccionar e ingeniear características que distingan especies similares manteniendo la generalización del modelo ante datos no vistos."
       }
     }
   },
@@ -181,7 +174,7 @@
         "degree": "Intercambio académico en Computer Engineering",
         "location": "Enschede, Países Bajos",
         "period": "Ago 2025 - Feb 2026",
-        "description": "Experiencia académica internacional que fortaleció adaptabilidad, autonomía y trabajo en contextos multiculturales."
+        "description": "Materias avanzadas de ingeniería en computación en una de las principales universidades técnicas de los Países Bajos. Desarrollé profundidad técnica y pensamiento orientado a investigación en un entorno académico multicultural y completamente en inglés."
       }
     }
   },
@@ -196,11 +189,11 @@
   "contact": {
     "eyebrow": "Contacto",
     "title": "Si tu equipo necesita a alguien que construya y aprenda rápido, hablemos.",
-    "description": "Me interesan especialmente internships, posiciones de recién graduado y equipos que valoren implementación limpia, arquitectura y calidad de producto.",
+    "description": "Me interesan especialmente internships, roles junior de ingeniería y equipos que valoren implementación limpia, arquitectura y calidad de software.",
     "basedIn": "Ubicado en",
-    "availabilityCard": "Disponible para internships, oportunidades de recién graduado y colaboración técnica.",
+    "availabilityCard": "Disponible para internships, roles junior de ingeniería y colaboración técnica.",
     "quickLabel": "Mejor ajuste",
-    "quickText": "Roles de backend, full stack y arquitectura donde pueda aportar con disciplina y crecer rápido.",
+    "quickText": "Roles de backend, full stack y orientados a arquitectura, o contextos de ingeniería de datos y ML donde importan los pipelines limpios y el pensamiento estructurado.",
     "links": {
       "email": {
         "label": "Correo",
@@ -208,15 +201,11 @@
       },
       "linkedin": {
         "label": "LinkedIn",
-        "note": "Perfil profesional, trayectoria y proyectos académicos."
+        "note": "Perfil profesional, trayectoria y proyectos."
       },
       "github": {
         "label": "GitHub",
         "note": "Código fuente, proyectos y contribuciones."
-      },
-      "instagram": {
-        "label": "Instagram",
-        "note": "Canal más personal con actividad diaria y contexto creativo."
       }
     }
   },

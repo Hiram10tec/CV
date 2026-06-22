@@ -10,8 +10,6 @@ import { Education } from "@/components/sections/Education";
 import { Contact } from "@/components/sections/Contact";
 import { defaultLocale, getPortfolioContent, isLocale, locales, personalInfo, type Locale } from "@/data/portfolio";
 
-export const dynamic = "force-dynamic";
-
 type HomeProps = {
   searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
