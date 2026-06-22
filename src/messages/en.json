@@ -18,7 +18,7 @@
     "title": "Computer Engineering Graduate and Full Stack Developer",
     "subtitle": "I build academic and professional-style software projects with strong structure, secure backend logic, and interfaces that stay clear under real constraints.",
     "availability": "Open to internships, graduate roles, and project-based opportunities.",
-    "location": "Queretaro, Mexico",
+    "location": "San Luis Potosi, Mexico",
     "profile": "Profile",
     "snapshot": "Snapshot",
     "quickNote": "Focused on software architecture, full stack delivery, and disciplined engineering practices.",
@@ -74,7 +74,7 @@
       "altertex": {
         "company": "Altertex modular enterprise system",
         "role": "Software Architect and Full Stack Developer",
-        "location": "Queretaro, Mexico",
+        "location": "San Luis Potosi, Mexico",
         "period": "Feb 2025 - Jun 2025",
         "summary": "A large-scale academic enterprise project executed with CMMI-oriented processes and a delivery model that simulated professional software work.",
         "bullet1": "Designed the solution using Hexagonal Architecture and Clean Architecture to keep the system modular and maintainable.",
@@ -86,7 +86,7 @@
       "wushu": {
         "company": "Queretaro Wushu Kung Fu Association app",
         "role": "Full Stack Developer for iOS delivery",
-        "location": "Queretaro, Mexico",
+        "location": "San Luis Potosi, Mexico",
         "period": "Sep 2024 - Dec 2024",
         "summary": "A mobile app project centered on analysis, architecture, implementation, testing, and deployment preparation for iOS.",
         "bullet1": "Analyzed functional and non-functional requirements before moving into implementation.",
@@ -135,6 +135,18 @@
         "description": "A repeatable way of working that connects architecture choices, documentation, code quality, and implementation speed.",
         "result": "Helped keep projects structured across frontend, backend, validation, and review processes.",
         "highlight": "Aligning architecture, documentation, and quality without slowing implementation or making the process heavy."
+      },
+      "wc2026": {
+        "title": "World Cup 2026 Match Predictor",
+        "description": "A machine learning model that predicts World Cup 2026 match outcomes using historical match data, team statistics, and tournament context.",
+        "result": "Built a predictive pipeline with ensemble ML methods to forecast match results across the tournament bracket.",
+        "highlight": "Engineering meaningful features from historical football data to produce reliable predictions across diverse team matchups."
+      },
+      "defungi": {
+        "title": "DeFungi ML",
+        "description": "A machine learning classifier that identifies and categorizes fungal species from biological feature data, enabling automated detection.",
+        "result": "Delivered a classification model capable of accurately identifying fungal categories from structured biological feature sets.",
+        "highlight": "Selecting and engineering features that distinguish similar fungal species while keeping the model generalizable."
       }
     }
   },
@@ -147,7 +159,8 @@
       "backend": "Backend",
       "mobile": "Mobile",
       "data": "Data",
-      "architectureQuality": "Architecture and quality"
+      "architectureQuality": "Architecture and quality",
+      "machineLearning": "Machine Learning"
     }
   },
   "education": {
@@ -196,10 +209,6 @@
       "linkedin": {
         "label": "LinkedIn",
         "note": "Professional profile, background, and academic project history."
-      },
-      "phone": {
-        "label": "Phone",
-        "note": "Good for interviews and direct role-related conversations."
       },
       "github": {
         "label": "GitHub",

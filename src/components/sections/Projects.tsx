@@ -1,14 +1,17 @@
 import Image from "next/image";
-import { ArrowUpRight, Boxes, ExternalLink, FolderKanban, Layers2, Smartphone } from "lucide-react";
+import { ArrowUpRight, BrainCircuit, Boxes, ExternalLink, FolderKanban, FlaskConical, Layers2, Smartphone } from "lucide-react";
 import type { PortfolioContent } from "@/data/portfolio";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Reveal } from "@/components/ui/Reveal";
 import { ProjectSignalOverlay } from "@/components/ui/ProjectSignalOverlay";
+import { TiltCard } from "@/components/ui/TiltCard";
 
 const projectIcons: Record<PortfolioContent["projects"]["items"][number]["id"], typeof Boxes> = {
   altertex: Boxes,
   wushu: Smartphone,
   workflow: Layers2,
+  wc2026: BrainCircuit,
+  defungi: FlaskConical,
 };
 
 type ProjectsProps = {
@@ -28,8 +31,9 @@ export function Projects({ projects }: ProjectsProps) {
             const Icon = projectIcons[project.id];
             return (
               <Reveal key={project.title} delay={index * 0.08}>
+                <TiltCard className="h-full" maxDeg={10}>
                 <article
-                  className="group tron-card tron-card-scan relative h-full overflow-hidden transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border-cyan-400/40"
+                  className="group tron-card tron-card-scan relative h-full overflow-hidden transition-[border-color,box-shadow] duration-300 hover:border-violet-500/40"
                   style={{ borderRadius: "4px" }}
                 >
                   <span aria-hidden className="pointer-events-none absolute left-0 top-0 z-10 h-5 w-5 border-l-2 border-t-2 border-cyan-400/55" />
@@ -73,6 +77,15 @@ export function Projects({ projects }: ProjectsProps) {
                         <ArrowUpRight className="h-4 w-4" />
                       </span>
                     </div>
+                    {project.role && (
+                      <div className="mt-2 flex flex-wrap items-center gap-2">
+                        <span className="font-tron text-[0.6rem] uppercase tracking-[0.18em] text-cyan-300">{project.role}</span>
+                        <span className="text-cyan-400/30">·</span>
+                        <span className="font-tron text-[0.6rem] uppercase tracking-[0.18em] text-[#8ab8cc]">{project.company}</span>
+                        <span className="text-cyan-400/30">·</span>
+                        <span className="font-tron text-[0.6rem] uppercase tracking-[0.18em] text-[#8ab8cc]/60">{project.period}</span>
+                      </div>
+                    )}
                     <p className="mt-3 text-sm leading-7 text-[#8ab8cc]">{project.description}</p>
 
                     <div className="mt-5 border border-cyan-400/12 bg-cyan-400/3 p-4" style={{ borderRadius: "2px" }}>
@@ -123,6 +136,7 @@ export function Projects({ projects }: ProjectsProps) {
                     )}
                   </div>
                 </article>
+                </TiltCard>
               </Reveal>
             );
           })}

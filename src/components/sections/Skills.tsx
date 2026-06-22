@@ -1,6 +1,7 @@
 import {
   Blocks,
   Braces,
+  BrainCircuit,
   Building2,
   CheckCheck,
   Cloud,
@@ -17,6 +18,7 @@ import {
   MonitorSmartphone,
   Smartphone,
   TabletSmartphone,
+  TrendingUp,
   UsersRound,
   Waypoints,
   Webhook,
@@ -39,6 +41,7 @@ const groupIcons: Record<PortfolioContent["skills"]["groups"][number]["id"], Luc
   mobile: Smartphone,
   data: Database,
   architectureQuality: GitBranch,
+  machineLearning: BrainCircuit,
 };
 
 function normalize(value: string) {
@@ -65,6 +68,11 @@ function getSkillIcon(skill: string): LucideIcon {
   if (n.includes("sql") || n.includes("mysql")) return Database;
   if (n.includes("model")) return Building2;
   if (n.includes("aws") || n.includes("s3") || n.includes("cloud")) return Cloud;
+  if (n.includes("python")) return Code2;
+  if (n.includes("scikit") || n.includes("sklearn")) return BrainCircuit;
+  if (n.includes("pandas") || n.includes("numpy") || n.includes("data anal")) return TrendingUp;
+  if (n.includes("machine learning") || n.includes("ml")) return BrainCircuit;
+  if (n.includes("jupyter") || n.includes("notebook")) return FileCode2;
   if (n.includes("hex")) return Hexagon;
   if (n.includes("clean")) return GitBranch;
   if (n.includes("cmmi")) return Building2;

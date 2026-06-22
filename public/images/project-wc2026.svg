@@ -1,0 +1,68 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg26" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070520"/>
+      <stop offset="100%" stop-color="#060314"/>
+    </linearGradient>
+    <radialGradient id="gv26" cx="30%" cy="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gc26" cx="70%" cy="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="gf26"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg26)"/>
+  <ellipse cx="220" cy="250" rx="240" ry="200" fill="url(#gv26)"/>
+  <ellipse cx="580" cy="250" rx="240" ry="200" fill="url(#gc26)"/>
+  <rect x="120" y="70" width="560" height="360" rx="3" fill="none" stroke="rgba(139,92,246,0.18)" stroke-width="1.5"/>
+  <line x1="400" y1="70" x2="400" y2="430" stroke="rgba(139,92,246,0.12)" stroke-width="1"/>
+  <circle cx="400" cy="250" r="65" fill="none" stroke="rgba(6,182,212,0.18)" stroke-width="1.5"/>
+  <rect x="120" y="185" width="60" height="130" rx="2" fill="none" stroke="rgba(139,92,246,0.12)" stroke-width="1"/>
+  <rect x="620" y="185" width="60" height="130" rx="2" fill="none" stroke="rgba(6,182,212,0.12)" stroke-width="1"/>
+  <circle cx="170" cy="155" r="5" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="170" cy="205" r="5" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="170" cy="255" r="5" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="170" cy="305" r="5" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="170" cy="345" r="5" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="290" cy="175" r="5" fill="#a78bfa" opacity="0.9"/>
+  <circle cx="290" cy="225" r="5" fill="#a78bfa" opacity="0.9"/>
+  <circle cx="290" cy="275" r="5" fill="#a78bfa" opacity="0.9"/>
+  <circle cx="290" cy="325" r="5" fill="#a78bfa" opacity="0.9"/>
+  <circle cx="420" cy="195" r="5" fill="#22d3ee" opacity="0.9"/>
+  <circle cx="420" cy="255" r="5" fill="#22d3ee" opacity="0.9"/>
+  <circle cx="420" cy="315" r="5" fill="#22d3ee" opacity="0.9"/>
+  <circle cx="560" cy="225" r="7" fill="#06b6d4" opacity="1"/>
+  <circle cx="560" cy="280" r="7" fill="#8b5cf6" opacity="1"/>
+  <line x1="170" y1="155" x2="290" y2="175" stroke="rgba(139,92,246,0.22)" stroke-width="0.8"/>
+  <line x1="170" y1="155" x2="290" y2="225" stroke="rgba(139,92,246,0.18)" stroke-width="0.8"/>
+  <line x1="170" y1="205" x2="290" y2="175" stroke="rgba(139,92,246,0.18)" stroke-width="0.8"/>
+  <line x1="170" y1="205" x2="290" y2="225" stroke="rgba(139,92,246,0.22)" stroke-width="0.8"/>
+  <line x1="170" y1="205" x2="290" y2="275" stroke="rgba(139,92,246,0.14)" stroke-width="0.8"/>
+  <line x1="170" y1="255" x2="290" y2="225" stroke="rgba(139,92,246,0.18)" stroke-width="0.8"/>
+  <line x1="170" y1="255" x2="290" y2="275" stroke="rgba(139,92,246,0.22)" stroke-width="0.8"/>
+  <line x1="170" y1="255" x2="290" y2="325" stroke="rgba(139,92,246,0.14)" stroke-width="0.8"/>
+  <line x1="170" y1="305" x2="290" y2="275" stroke="rgba(139,92,246,0.18)" stroke-width="0.8"/>
+  <line x1="170" y1="305" x2="290" y2="325" stroke="rgba(139,92,246,0.22)" stroke-width="0.8"/>
+  <line x1="170" y1="345" x2="290" y2="325" stroke="rgba(139,92,246,0.22)" stroke-width="0.8"/>
+  <line x1="290" y1="175" x2="420" y2="195" stroke="rgba(100,116,210,0.2)" stroke-width="0.8"/>
+  <line x1="290" y1="175" x2="420" y2="255" stroke="rgba(100,116,210,0.16)" stroke-width="0.8"/>
+  <line x1="290" y1="225" x2="420" y2="195" stroke="rgba(6,182,212,0.18)" stroke-width="0.8"/>
+  <line x1="290" y1="225" x2="420" y2="255" stroke="rgba(6,182,212,0.22)" stroke-width="0.8"/>
+  <line x1="290" y1="275" x2="420" y2="255" stroke="rgba(6,182,212,0.22)" stroke-width="0.8"/>
+  <line x1="290" y1="275" x2="420" y2="315" stroke="rgba(6,182,212,0.18)" stroke-width="0.8"/>
+  <line x1="290" y1="325" x2="420" y2="315" stroke="rgba(100,116,210,0.2)" stroke-width="0.8"/>
+  <line x1="420" y1="195" x2="560" y2="225" stroke="rgba(6,182,212,0.45)" stroke-width="1.2"/>
+  <line x1="420" y1="255" x2="560" y2="225" stroke="rgba(6,182,212,0.35)" stroke-width="1"/>
+  <line x1="420" y1="255" x2="560" y2="280" stroke="rgba(139,92,246,0.35)" stroke-width="1"/>
+  <line x1="420" y1="315" x2="560" y2="280" stroke="rgba(139,92,246,0.45)" stroke-width="1.2"/>
+  <text x="150" y="140" fill="rgba(167,139,250,0.65)" font-family="monospace" font-size="9" letter-spacing="1">INPUT</text>
+  <text x="574" y="229" fill="rgba(6,182,212,0.9)" font-family="monospace" font-size="10" font-weight="bold">WIN</text>
+  <text x="574" y="284" fill="rgba(139,92,246,0.9)" font-family="monospace" font-size="10">LOSS</text>
+  <circle cx="400" cy="250" r="20" fill="none" stroke="rgba(6,182,212,0.4)" stroke-width="1.5"/>
+  <circle cx="400" cy="250" r="7" fill="rgba(6,182,212,0.35)"/>
+  <circle cx="400" cy="250" r="20" fill="rgba(6,182,212,0.06)"/>
+  <text x="400" y="462" text-anchor="middle" fill="rgba(139,92,246,0.45)" font-family="monospace" font-size="11" letter-spacing="4">WC2026 · MATCH PREDICTOR · ML</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgdf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#040e10"/>
+      <stop offset="100%" stop-color="#06050f"/>
+    </linearGradient>
+    <radialGradient id="glowdf" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#8b5cf6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blurdf"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgdf)"/>
+  <ellipse cx="400" cy="250" rx="320" ry="240" fill="url(#glowdf)"/>
+  <circle cx="400" cy="250" r="190" fill="none" stroke="rgba(16,185,129,0.14)" stroke-width="1.5"/>
+  <circle cx="400" cy="250" r="175" fill="none" stroke="rgba(16,185,129,0.08)" stroke-width="1"/>
+  <circle cx="400" cy="250" r="155" fill="none" stroke="rgba(139,92,246,0.10)" stroke-width="1" stroke-dasharray="4 6"/>
+  <line x1="210" y1="250" x2="590" y2="250" stroke="rgba(16,185,129,0.10)" stroke-width="0.8"/>
+  <line x1="400" y1="60" x2="400" y2="440" stroke="rgba(16,185,129,0.10)" stroke-width="0.8"/>
+  <circle cx="400" cy="250" r="32" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.5)" stroke-width="1.5"/>
+  <circle cx="400" cy="250" r="14" fill="rgba(16,185,129,0.25)"/>
+  <circle cx="400" cy="250" r="6" fill="rgba(16,185,129,0.6)"/>
+  <circle cx="460" cy="210" r="22" fill="rgba(16,185,129,0.10)" stroke="rgba(16,185,129,0.38)" stroke-width="1.2"/>
+  <circle cx="460" cy="210" r="9" fill="rgba(16,185,129,0.22)"/>
+  <circle cx="460" cy="210" r="4" fill="#10b981" opacity="0.6"/>
+  <circle cx="340" cy="195" r="18" fill="rgba(139,92,246,0.10)" stroke="rgba(139,92,246,0.38)" stroke-width="1.2"/>
+  <circle cx="340" cy="195" r="7" fill="rgba(139,92,246,0.22)"/>
+  <circle cx="340" cy="195" r="3" fill="#a78bfa" opacity="0.6"/>
+  <circle cx="445" cy="305" r="25" fill="rgba(16,185,129,0.09)" stroke="rgba(16,185,129,0.35)" stroke-width="1.2"/>
+  <circle cx="445" cy="305" r="10" fill="rgba(16,185,129,0.20)"/>
+  <circle cx="445" cy="305" r="4" fill="#10b981" opacity="0.55"/>
+  <circle cx="355" cy="315" r="16" fill="rgba(139,92,246,0.09)" stroke="rgba(139,92,246,0.30)" stroke-width="1"/>
+  <circle cx="355" cy="315" r="6" fill="rgba(139,92,246,0.20)"/>
+  <circle cx="500" cy="265" r="13" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.28)" stroke-width="1"/>
+  <circle cx="305" cy="270" r="14" fill="rgba(6,182,212,0.08)" stroke="rgba(6,182,212,0.28)" stroke-width="1"/>
+  <path d="M400 218 Q430 205 460 210" fill="none" stroke="rgba(16,185,129,0.35)" stroke-width="1.2"/>
+  <path d="M400 218 Q370 207 340 195" fill="none" stroke="rgba(139,92,246,0.32)" stroke-width="1.2"/>
+  <path d="M400 282 Q422 294 445 305" fill="none" stroke="rgba(16,185,129,0.32)" stroke-width="1.2"/>
+  <path d="M400 282 Q378 298 355 315" fill="none" stroke="rgba(139,92,246,0.28)" stroke-width="1.2"/>
+  <path d="M432 250 Q466 258 500 265" fill="none" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <path d="M368 250 Q337 260 305 270" fill="none" stroke="rgba(6,182,212,0.25)" stroke-width="1"/>
+  <rect x="478" y="192" width="76" height="20" rx="2" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.35)" stroke-width="1"/>
+  <text x="516" y="206" text-anchor="middle" fill="rgba(16,185,129,0.9)" font-family="monospace" font-size="9" font-weight="bold">ASPERGILLUS</text>
+  <rect x="250" y="177" width="70" height="20" rx="2" fill="rgba(139,92,246,0.12)" stroke="rgba(139,92,246,0.35)" stroke-width="1"/>
+  <text x="285" y="191" text-anchor="middle" fill="rgba(167,139,250,0.9)" font-family="monospace" font-size="9" font-weight="bold">CANDIDA</text>
+  <rect x="460" y="322" width="76" height="20" rx="2" fill="rgba(16,185,129,0.10)" stroke="rgba(16,185,129,0.30)" stroke-width="1"/>
+  <text x="498" y="336" text-anchor="middle" fill="rgba(16,185,129,0.8)" font-family="monospace" font-size="9">PENICILLIUM</text>
+  <rect x="598" y="340" width="130" height="90" rx="3" fill="rgba(10,10,30,0.7)" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
+  <text x="610" y="358" fill="rgba(16,185,129,0.6)" font-family="monospace" font-size="8" letter-spacing="1">CONFIDENCE</text>
+  <rect x="610" y="364" width="106" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
+  <rect x="610" y="364" width="91" height="5" rx="2" fill="rgba(16,185,129,0.7)"/>
+  <text x="716" y="370" fill="rgba(16,185,129,0.8)" font-family="monospace" font-size="7">86%</text>
+  <rect x="610" y="376" width="106" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
+  <rect x="610" y="376" width="52" height="5" rx="2" fill="rgba(139,92,246,0.7)"/>
+  <text x="716" y="382" fill="rgba(139,92,246,0.8)" font-family="monospace" font-size="7">49%</text>
+  <rect x="610" y="388" width="106" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
+  <rect x="610" y="388" width="28" height="5" rx="2" fill="rgba(6,182,212,0.7)"/>
+  <text x="716" y="394" fill="rgba(6,182,212,0.8)" font-family="monospace" font-size="7">26%</text>
+  <text x="610" y="408" fill="rgba(16,185,129,0.5)" font-family="monospace" font-size="7">→ ASPERGILLUS</text>
+  <text x="610" y="420" fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="7">  CANDIDA / PEN.</text>
+  <text x="400" y="462" text-anchor="middle" fill="rgba(16,185,129,0.38)" font-family="monospace" font-size="11" letter-spacing="4">DEFUNGI · FUNGAL CLASSIFIER · ML</text>
+</svg>
