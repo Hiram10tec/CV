@@ -135,6 +135,18 @@
         "description": "Eine wiederverwendbare Arbeitsweise, die Architekturentscheidungen, Dokumentation, Codequalität und Umsetzung verbindet.",
         "result": "Half dabei, Projekte über Frontend, Backend, Validierung und Review-Prozesse hinweg strukturiert zu halten.",
         "highlight": "Architektur, Dokumentation und Qualität abstimmen, ohne die Umsetzung auszubremsen oder den Prozess schwerfällig zu machen."
+      },
+      "wc2026": {
+        "title": "WM 2026 Spielergebnis-Predictor",
+        "description": "Ein Machine-Learning-Modell, das WM-2026-Spielergebnisse auf Basis historischer Spieldaten, Teamstatistiken und Turnierkontext vorhersagt.",
+        "result": "Aufgebaut wurde eine Vorhersage-Pipeline mit Ensemble-ML-Methoden zur Prognose von Ergebnissen im gesamten Turnierfeld.",
+        "highlight": "Aussagekräftige Features aus historischen Fußballdaten entwickeln, um zuverlässige Vorhersagen über verschiedene Teamkombinationen zu erzielen."
+      },
+      "defungi": {
+        "title": "DeFungi ML",
+        "description": "Ein ML-Klassifikator, der Pilzarten anhand biologischer Feature-Daten identifiziert und kategorisiert und eine automatisierte Erkennung ermöglicht.",
+        "result": "Lieferung eines Klassifikationsmodells zur genauen Identifikation von Pilzkategorien aus strukturierten biologischen Feature-Sets.",
+        "highlight": "Features auswählen und entwickeln, die ähnliche Pilzarten unterscheiden, während die Generalisierbarkeit des Modells erhalten bleibt."
       }
     }
   },
@@ -147,7 +159,8 @@
       "backend": "Backend",
       "mobile": "Mobile",
       "data": "Daten",
-      "architectureQuality": "Architektur und Qualität"
+      "architectureQuality": "Architektur und Qualität",
+      "machineLearning": "Machine Learning"
     }
   },
   "education": {

@@ -3,8 +3,8 @@ import { personalInfo } from "@/config/site";
 import { defaultLocale, getMessages, isLocale, locales, type Locale } from "@/lib/i18n";
 
 type ContactIcon = "Mail" | "Linkedin" | "Phone" | "Instagram" | "Github";
-type ProjectId = "altertex" | "wushu" | "workflow";
-type SkillGroupId = "frontend" | "backend" | "mobile" | "data" | "architectureQuality";
+type ProjectId = "altertex" | "wushu" | "workflow" | "wc2026" | "defungi";
+type SkillGroupId = "frontend" | "backend" | "mobile" | "data" | "architectureQuality" | "machineLearning";
 
 type AchievementId = "exchange" | "english" | "german" | "ios" | "cmmi" | "architecture";
 
@@ -193,6 +193,22 @@ const projectItems = [
     tags: ["Clean Architecture", "Hexagonal", "CMMI", "IEEE 829", "ESLint"],
     links: [] as Array<{ label: string; href: string }>,
   },
+  {
+    id: "wc2026",
+    image: "/images/project-wc2026.svg",
+    tags: ["Python", "scikit-learn", "Pandas", "NumPy", "Machine Learning", "Data Analysis"],
+    links: [
+      { label: "GitHub", href: "https://github.com/Hiram10tec/WC2026-ML" },
+    ],
+  },
+  {
+    id: "defungi",
+    image: "/images/project-defungi.svg",
+    tags: ["Python", "Machine Learning", "Classification", "Jupyter", "scikit-learn"],
+    links: [
+      { label: "GitHub", href: "https://github.com/Hiram10tec/DeFungi-ML" },
+    ],
+  },
 ] as const;
 
 const skillGroups = [
@@ -220,6 +236,11 @@ const skillGroups = [
     id: "architectureQuality",
     titleKey: "skills.groups.architectureQuality",
     skills: ["Hexagonal", "Clean Architecture", "MVVM", "CMMI", "Scrum", "DAD", "Swagger", "IEEE 829"],
+  },
+  {
+    id: "machineLearning",
+    titleKey: "skills.groups.machineLearning",
+    skills: ["Python", "scikit-learn", "Pandas", "NumPy", "Machine Learning", "Jupyter", "Data Analysis"],
   },
 ] as const;
 

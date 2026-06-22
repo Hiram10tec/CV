@@ -87,6 +87,46 @@ const patterns: Record<
       { x: 836, y: 574, width: 86, delay: 820 },
     ],
   },
+  wc2026: {
+    accent: "#8b5cf6",
+    secondary: "#06b6d4",
+    lines: [
+      { d: "M200 400H400C440 400 440 300 480 300H700", delay: 0, width: 7 },
+      { d: "M350 500H550C590 500 590 420 630 420H830", delay: 180, width: 6 },
+      { d: "M480 300V560", delay: 320, width: 4 },
+    ],
+    nodes: [
+      { cx: 200, cy: 400, r: 10, delay: 0 },
+      { cx: 700, cy: 300, r: 11, delay: 200 },
+      { cx: 830, cy: 420, r: 11, delay: 360 },
+      { cx: 480, cy: 560, r: 9, delay: 480 },
+    ],
+    scanners: [
+      { x: 180, y: 382, width: 380, delay: 0 },
+      { x: 580, y: 402, width: 280, delay: 400 },
+    ],
+  },
+  defungi: {
+    accent: "#10b981",
+    secondary: "#8b5cf6",
+    lines: [
+      { d: "M300 400C300 320 400 260 512 260C624 260 724 320 724 400C724 480 624 540 512 540C400 540 300 480 300 400", delay: 0, width: 6 },
+      { d: "M512 260V160", delay: 200, width: 5 },
+      { d: "M724 400H860", delay: 360, width: 5 },
+      { d: "M512 540V640", delay: 520, width: 4 },
+    ],
+    nodes: [
+      { cx: 512, cy: 400, r: 13, delay: 0 },
+      { cx: 512, cy: 160, r: 10, delay: 240 },
+      { cx: 860, cy: 400, r: 10, delay: 400 },
+      { cx: 512, cy: 640, r: 9, delay: 560 },
+      { cx: 300, cy: 400, r: 9, delay: 680 },
+    ],
+    scanners: [
+      { x: 466, y: 142, width: 92, delay: 0 },
+      { x: 814, y: 382, width: 84, delay: 480 },
+    ],
+  },
 };
 
 export function ProjectSignalOverlay({ projectId }: ProjectSignalOverlayProps) {
