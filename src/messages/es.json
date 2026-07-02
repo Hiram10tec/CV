@@ -5,7 +5,6 @@
   },
   "nav": {
     "about": "Perfil",
-    "timeline": "Trayectoria",
     "projects": "Proyectos",
     "skills": "Habilidades",
     "education": "Educación",
@@ -64,50 +63,6 @@
       }
     }
   },
-  "timeline": {
-    "eyebrow": "Trayectoria",
-    "title": "Cómo he llevado proyectos desde requerimientos hasta entrega.",
-    "description": "Estos son los proyectos más fuertes de mi portafolio. Aquí muestro responsabilidades, proceso y decisiones técnicas, no sólo pantallas finales.",
-    "stackLabel": "Tecnologías",
-    "items": {
-      "altertex": {
-        "company": "Altertex sistema empresarial modular",
-        "role": "Arquitecto de Software y Desarrollador Full Stack",
-        "location": "San Luis Potosí, México",
-        "period": "Feb 2025 - Jun 2025",
-        "summary": "Sistema de gestión empresarial a gran escala ejecutado con procesos orientados a CMMI y un modelo de entrega que reflejó las prácticas profesionales de ingeniería de software.",
-        "bullet1": "Diseñé la solución con Arquitectura Hexagonal y Clean Architecture para mantener el sistema modular y mantenible.",
-        "bullet2": "Construí servicios backend, modelos de datos y módulos frontend para usuarios, roles, categorías, cuotas y flujo de productos.",
-        "bullet3": "Implementé control de permisos RBAC, 2FA, validación de entradas y comportamiento de API con enfoque en seguridad.",
-        "bullet4": "Trabajé con APIs documentadas en Swagger, documentación formal, revisiones estructuradas y puntos de control de calidad.",
-        "bullet5": "Tomé un rol de liderazgo en la etapa inicial para apoyar reestimaciones y coordinación con el socio externo de capacitación."
-      },
-      "wushu": {
-        "company": "App de la Asociación Queretana de Wushu Kung Fu",
-        "role": "Desarrollador Full Stack para entrega iOS",
-        "location": "Querétaro, México",
-        "period": "Sep 2024 - Dic 2024",
-        "summary": "Proyecto móvil con ciclo completo: de requerimientos y arquitectura hasta implementación, pruebas y despliegue en TestFlight.",
-        "bullet1": "Analicé requerimientos funcionales y no funcionales antes de pasar a implementación.",
-        "bullet2": "Diseñé la arquitectura móvil con MVVM para mantener escalabilidad y separación clara de responsabilidades.",
-        "bullet3": "Implementé vistas y flujos en SwiftUI con atención a usabilidad y rendimiento.",
-        "bullet4": "Validé el producto con pruebas y mejoras iterativas bajo una dinámica Scrum.",
-        "bullet5": "Preparé la aplicación para despliegue en TestFlight manteniendo calidad y seguridad en alcance."
-      }
-    }
-  },
-  "achievements": {
-    "eyebrow": "Destacados",
-    "title": "Hitos clave.",
-    "items": {
-      "exchange": { "title": "Intercambio Internacional", "description": "University of Twente, Países Bajos — 2025–2026.", "badge": "Twente" },
-      "english": { "title": "Inglés C1", "description": "Competencia profesional en inglés.", "badge": "C1" },
-      "german": { "title": "Alemán A2", "description": "Comunicación funcional, en mejora continua.", "badge": "A2" },
-      "ios": { "title": "App iOS en TestFlight", "description": "Ciclo completo desde requerimientos hasta despliegue en TestFlight.", "badge": "iOS" },
-      "cmmi": { "title": "Proceso nivel CMMI", "description": "Prácticas formales del ciclo de vida en proyecto empresarial.", "badge": "CMMI" },
-      "architecture": { "title": "Clean + Hexagonal Architecture", "description": "Implementada en sistema empresarial full stack.", "badge": "Arch" }
-    }
-  },
   "projects": {
     "eyebrow": "Proyectos",
     "title": "Trabajos seleccionados y los resultados que generaron.",
@@ -121,13 +76,19 @@
         "title": "Plataforma empresarial Altertex",
         "description": "Sistema modular de gestión construido para mantenibilidad, control de permisos y flujos de negocio seguros.",
         "result": "Entregó backend y frontend modulares con RBAC, 2FA, APIs REST documentadas con Swagger y cobertura formal de pruebas, cubriendo flujos de usuarios, productos, cuotas y categorías.",
-        "highlight": "Mantener reglas RBAC, lógica de validación y flujos administrativos consistentes entre módulos sin generar acoplamiento rígido."
+        "highlight": "Mantener reglas RBAC, lógica de validación y flujos administrativos consistentes entre módulos sin generar acoplamiento rígido.",
+        "role": "Arquitecto de Software y Desarrollador Full Stack",
+        "company": "Altertex sistema empresarial modular",
+        "period": "Feb 2025 - Jun 2025"
       },
       "wushu": {
         "title": "Aplicación iOS Wushu",
         "description": "App iOS llevada desde requerimientos hasta arquitectura, construcción de interfaces, pruebas y despliegue en TestFlight.",
         "result": "Entregó una app SwiftUI con MVVM en ciclo completo hasta TestFlight en un sprint de 4 meses, con pruebas estructuradas e iteración Scrum.",
-        "highlight": "Convertir requerimientos y flujos de usuario en una arquitectura móvil escalable manteniendo la app lista para despliegue en cada sprint."
+        "highlight": "Convertir requerimientos y flujos de usuario en una arquitectura móvil escalable manteniendo la app lista para despliegue en cada sprint.",
+        "role": "Desarrollador Full Stack para entrega iOS",
+        "company": "App de la Asociación Queretana de Wushu Kung Fu",
+        "period": "Sep 2024 - Dic 2024"
       },
       "wc2026": {
         "title": "Predictor de partidos del Mundial 2026",
@@ -177,14 +138,6 @@
         "description": "Materias avanzadas de ingeniería en computación en una de las principales universidades técnicas de los Países Bajos. Desarrollé profundidad técnica y pensamiento orientado a investigación en un entorno académico multicultural y completamente en inglés."
       }
     }
-  },
-  "philosophy": {
-    "eyebrow": "Enfoque",
-    "title": "Los principios detrás de cómo construyo software.",
-    "item1": "Mantener la arquitectura práctica y conectada con la entrega.",
-    "item2": "Preferir claridad en código, interfaces y comunicación.",
-    "item3": "Usar procesos de calidad para proteger el ritmo, no para frenarlo.",
-    "item4": "Construir soluciones mantenibles después de la primera versión."
   },
   "contact": {
     "eyebrow": "Contacto",

@@ -19,7 +19,7 @@ export function Navbar({ locale, locales, nav, name }: NavbarProps) {
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 24);
-      const ids = ["about", "experience", "projects", "skills", "education", "contact"];
+      const ids = ["about", "projects", "skills", "education", "contact"];
       const y = window.scrollY + 140;
       let current = "";
       for (const id of ids) {
@@ -46,12 +46,11 @@ export function Navbar({ locale, locales, nav, name }: NavbarProps) {
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4 md:px-8">
       <div
-        className={`relative mx-auto max-w-7xl border px-5 py-3 transition-all duration-300 ${
+        className={`relative mx-auto max-w-7xl rounded-[3px] border px-5 py-3 transition-all duration-300 ${
           scrolled
-            ? "border-cyan-400/20 bg-[#000c14]/88 shadow-[0_4px_30px_rgba(0,0,0,0.7),0_0_20px_rgba(0,212,255,0.06)] backdrop-blur-xl"
+            ? "border-cyan-400/20 bg-abyss/88 shadow-[0_4px_30px_rgba(0,0,0,0.7),0_0_20px_rgba(0,212,255,0.06)] backdrop-blur-xl"
             : "border-transparent bg-transparent"
         }`}
-        style={{ borderRadius: "3px" }}
       >
         {scrolled && (
           <div
@@ -82,7 +81,7 @@ export function Navbar({ locale, locales, nav, name }: NavbarProps) {
                 <a
                   key={item.href}
                   href={localizedHref(locale, item.href)}
-                  className={`font-tron relative text-[0.68rem] uppercase tracking-[0.2em] transition ${active ? "text-cyan-300" : "text-[#8ab8cc] hover:text-cyan-300"}`}
+                  className={`font-tron relative text-[0.68rem] uppercase tracking-[0.2em] transition ${active ? "text-cyan-300" : "text-steel hover:text-cyan-300"}`}
                   style={active ? { textShadow: "0 0 8px rgba(0,212,255,0.6)" } : undefined}
                 >
                   {item.label}
@@ -94,20 +93,18 @@ export function Navbar({ locale, locales, nav, name }: NavbarProps) {
 
           <div className="flex items-center gap-2 md:gap-3">
             <div
-              className="flex items-center gap-px border border-cyan-400/20 bg-[#001a2e]/60 p-0.5"
-              style={{ borderRadius: "2px" }}
+              className="flex items-center gap-px border border-cyan-400/20 bg-depth/60 p-0.5 rounded-[2px]"
             >
               {locales.map((item) => (
                 <a
                   key={item.code}
                   href={`/?lang=${item.code}`}
                   aria-label={`${nav.languageLabel}: ${item.label}`}
-                  className={`font-tron px-3 py-1.5 text-[0.65rem] font-semibold tracking-[0.2em] uppercase transition ${
+                  className={`font-tron rounded-[2px] px-3 py-1.5 text-[0.65rem] font-semibold tracking-[0.2em] uppercase transition ${
                     item.code === locale
                       ? "bg-cyan-400/15 text-cyan-300"
-                      : "text-[#4a7a9b] hover:text-cyan-300"
+                      : "text-tide hover:text-cyan-300"
                   }`}
-                  style={{ borderRadius: "2px" }}
                 >
                   {item.label}
                 </a>
@@ -117,8 +114,8 @@ export function Navbar({ locale, locales, nav, name }: NavbarProps) {
             <a
               href={localizedHref(locale, "#contact")}
               onClick={closeMenu}
-              className="font-tron hidden border border-cyan-400/35 bg-cyan-400/8 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-cyan-300 transition hover:border-cyan-400/60 hover:bg-cyan-400/15 sm:inline-flex"
-              style={{ borderRadius: "2px", boxShadow: "0 0 8px rgba(0,212,255,0.1)" }}
+              className="font-tron hidden border border-cyan-400/35 bg-cyan-400/8 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-cyan-300 transition hover:border-cyan-400/60 hover:bg-cyan-400/15 sm:inline-flex rounded-[2px]"
+              style={{ boxShadow: "0 0 8px rgba(0,212,255,0.1)" }}
             >
               {nav.cta}
             </a>
@@ -128,8 +125,7 @@ export function Navbar({ locale, locales, nav, name }: NavbarProps) {
               aria-label="Menu"
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen((open) => !open)}
-              className="inline-flex h-9 w-9 items-center justify-center border border-cyan-400/20 bg-cyan-400/5 text-cyan-300 transition hover:border-cyan-400/40 hover:bg-cyan-400/10 lg:hidden"
-              style={{ borderRadius: "2px" }}
+              className="inline-flex h-9 w-9 items-center justify-center border border-cyan-400/20 bg-cyan-400/5 text-cyan-300 transition hover:border-cyan-400/40 hover:bg-cyan-400/10 lg:hidden rounded-[2px]"
             >
               <span className="relative h-4 w-4" aria-hidden>
                 <span
@@ -150,8 +146,7 @@ export function Navbar({ locale, locales, nav, name }: NavbarProps) {
                 key={item.href}
                 href={localizedHref(locale, item.href)}
                 onClick={closeMenu}
-                className="font-tron px-3 py-3 text-[0.7rem] uppercase tracking-[0.2em] text-[#8ab8cc] transition hover:bg-cyan-400/5 hover:text-cyan-300"
-                style={{ borderRadius: "2px" }}
+                className="font-tron px-3 py-3 text-[0.7rem] uppercase tracking-[0.2em] text-steel transition hover:bg-cyan-400/5 hover:text-cyan-300 rounded-[2px]"
               >
                 {item.label}
               </a>
@@ -159,8 +154,7 @@ export function Navbar({ locale, locales, nav, name }: NavbarProps) {
             <a
               href={localizedHref(locale, "#contact")}
               onClick={closeMenu}
-              className="font-tron mt-2 border border-cyan-400/30 bg-cyan-400/8 px-3 py-3 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-cyan-200 transition hover:border-cyan-400/50 hover:bg-cyan-400/15"
-              style={{ borderRadius: "2px" }}
+              className="font-tron mt-2 border border-cyan-400/30 bg-cyan-400/8 px-3 py-3 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-cyan-200 transition hover:border-cyan-400/50 hover:bg-cyan-400/15 rounded-[2px]"
             >
               {nav.cta}
             </a>

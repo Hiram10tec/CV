@@ -100,11 +100,11 @@ export function Skills({ skills }: SkillsProps) {
             const GroupIcon = groupIcons[group.id] ?? Wrench;
             return (
               <Reveal key={group.title} delay={index * 0.07}>
-                <TronCard scan className="p-6" style={{ borderRadius: "4px" }}>
+                <TronCard scan className="p-6 rounded-[4px]">
                   <div className="flex items-center gap-3">
                     <div
-                      className="inline-flex h-10 w-10 items-center justify-center border border-cyan-400/25 bg-cyan-400/8 text-cyan-300"
-                      style={{ borderRadius: "2px", boxShadow: "0 0 10px rgba(0,212,255,0.12)" }}
+                      className="inline-flex h-10 w-10 items-center justify-center border border-cyan-400/25 bg-cyan-400/8 text-cyan-300 rounded-[2px]"
+                      style={{ boxShadow: "0 0 10px rgba(0,212,255,0.12)" }}
                     >
                       <GroupIcon className="h-5 w-5" />
                     </div>
@@ -119,8 +119,7 @@ export function Skills({ skills }: SkillsProps) {
                       return (
                         <span
                           key={skill}
-                          className="inline-flex items-center gap-1.5 border border-cyan-400/18 bg-cyan-400/4 px-3 py-1.5 text-[0.68rem] text-[#8ab8cc] transition hover:border-cyan-400/32 hover:text-cyan-300"
-                          style={{ borderRadius: "2px" }}
+                          className="inline-flex items-center gap-1.5 border border-cyan-400/18 bg-cyan-400/4 px-3 py-1.5 text-[0.68rem] text-steel transition hover:border-cyan-400/32 hover:text-cyan-300 rounded-[2px]"
                         >
                           <SkillIcon className="h-3 w-3 text-cyan-400/70" />
                           {skill}

@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+  /* ── Text/surface tokens (were inline hex across components) ── */
+  --color-frost: #cce8f5; /* bright body text */
+  --color-steel: #8ab8cc; /* cyan-tinted body text */
+  --color-mist: #9aaccf;  /* violet-tinted body text */
+  --color-haze: #8a9cb8;  /* muted labels (lightened from #7a8eaa for contrast) */
+  --color-tide: #5d8fb0;  /* dim labels (lightened from #4a7a9b for contrast) */
+  --color-abyss: #000c14; /* darkest surface */
+  --color-depth: #001a2e; /* dark surface */
+}
+
 :root {
   /* ── Core palette ── */
   --bg: #05040f;
@@ -274,3 +285,15 @@ body {
 .animate-orbit-y    { animation: orbit-y 18s linear infinite; }
 .animate-orbit-free { animation: orbit-free 9s linear infinite; }
 .animate-float      { animation: float-y 5s ease-in-out infinite; }
+
+/* ── Reduced motion: kill infinite animations, smooth scroll and sweeps ── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

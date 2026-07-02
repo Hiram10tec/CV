@@ -6,8 +6,6 @@ type ContactIcon = "Mail" | "Linkedin" | "Github";
 type ProjectId = "altertex" | "wushu" | "wc2026" | "defungi";
 type SkillGroupId = "frontend" | "backend" | "mobile" | "data" | "architectureQuality" | "machineLearning";
 
-type AchievementId = "exchange" | "english" | "german" | "ios" | "cmmi" | "architecture";
-
 export type PortfolioContent = {
   metadata: {
     title: string;
@@ -15,7 +13,6 @@ export type PortfolioContent = {
   };
   nav: {
     about: string;
-    timeline: string;
     projects: string;
     skills: string;
     education: string;
@@ -46,22 +43,6 @@ export type PortfolioContent = {
     imageCaptionText: string;
     pills: string[];
     cards: Array<{ title: string; description: string }>;
-  };
-  timeline: {
-    eyebrow: string;
-    title: string;
-    description: string;
-    stackLabel: string;
-    items: Array<{
-      id: ProjectId;
-      company: string;
-      role: string;
-      location: string;
-      period: string;
-      summary: string;
-      bullets: string[];
-      stack: string[];
-    }>;
   };
   projects: {
     eyebrow: string;
@@ -104,16 +85,6 @@ export type PortfolioContent = {
       image: string;
       description: string;
     }>;
-  };
-  achievements: {
-    eyebrow: string;
-    title: string;
-    items: Array<{ id: AchievementId; title: string; description: string; badge: string }>;
-  };
-  philosophy: {
-    eyebrow: string;
-    title: string;
-    items: string[];
   };
   contact: {
     eyebrow: string;
@@ -158,19 +129,6 @@ const aboutCardIds = [
   "practicalLearning",
 ] as const;
 
-const timelineItems = [
-  {
-    id: "altertex",
-    stack: ["React", "Node.js", "MySQL", "Hexagonal Architecture", "Clean Architecture", "CMMI", "DAD"],
-  },
-  {
-    id: "wushu",
-    stack: ["Swift", "SwiftUI", "MVVM", "Testing", "Scrum", "iOS"],
-  },
-] as const;
-
-const timelineBulletKeys = ["bullet1", "bullet2", "bullet3", "bullet4", "bullet5"] as const;
-
 const projectItems = [
   {
     id: "altertex",
@@ -180,9 +138,9 @@ const projectItems = [
       { label: "Frontend", href: "https://github.com/CodeAnd-Co/Frontend-Text-Lines" },
       { label: "Backend", href: "https://github.com/CodeAnd-Co/Backend-textiles" },
     ],
-    roleKey: "timeline.items.altertex.role" as const,
-    companyKey: "timeline.items.altertex.company" as const,
-    periodKey: "timeline.items.altertex.period" as const,
+    roleKey: "projects.items.altertex.role" as const,
+    companyKey: "projects.items.altertex.company" as const,
+    periodKey: "projects.items.altertex.period" as const,
   },
   {
     id: "wushu",
@@ -191,9 +149,9 @@ const projectItems = [
     links: [
       { label: "iOS App", href: "https://github.com/Academia-Mexicana-de-Wushu-Queretaro/iOS" },
     ],
-    roleKey: "timeline.items.wushu.role" as const,
-    companyKey: "timeline.items.wushu.company" as const,
-    periodKey: "timeline.items.wushu.period" as const,
+    roleKey: "projects.items.wushu.role" as const,
+    companyKey: "projects.items.wushu.company" as const,
+    periodKey: "projects.items.wushu.period" as const,
   },
   {
     id: "wc2026",
@@ -251,8 +209,6 @@ const educationItems = [
   { id: "twente", image: "/images/education-twente.jpg" },
 ] as const;
 
-const achievementIds: AchievementId[] = ["exchange", "english", "german", "ios", "cmmi", "architecture"];
-
 const contactLinkConfigs = [
   {
     id: "email",
@@ -274,13 +230,6 @@ const contactLinkConfigs = [
   },
 ] as const;
 
-const philosophyKeys = [
-  "philosophy.item1",
-  "philosophy.item2",
-  "philosophy.item3",
-  "philosophy.item4",
-] as const;
-
 export function getPortfolioContent(locale: Locale): PortfolioContent {
   const t = createTranslator({
     locale,
@@ -294,7 +243,6 @@ export function getPortfolioContent(locale: Locale): PortfolioContent {
     },
     nav: {
       about: t("nav.about"),
-      timeline: t("nav.timeline"),
       projects: t("nav.projects"),
       skills: t("nav.skills"),
       education: t("nav.education"),
@@ -330,22 +278,6 @@ export function getPortfolioContent(locale: Locale): PortfolioContent {
       cards: aboutCardIds.map((id) => ({
         title: t(`about.cards.${id}.title`),
         description: t(`about.cards.${id}.description`),
-      })),
-    },
-    timeline: {
-      eyebrow: t("timeline.eyebrow"),
-      title: t("timeline.title"),
-      description: t("timeline.description"),
-      stackLabel: t("timeline.stackLabel"),
-      items: timelineItems.map((item) => ({
-        id: item.id,
-        company: t(`timeline.items.${item.id}.company`),
-        role: t(`timeline.items.${item.id}.role`),
-        location: t(`timeline.items.${item.id}.location`),
-        period: t(`timeline.items.${item.id}.period`),
-        summary: t(`timeline.items.${item.id}.summary`),
-        bullets: timelineBulletKeys.map((bulletKey) => t(`timeline.items.${item.id}.${bulletKey}`)),
-        stack: [...item.stack],
       })),
     },
     projects: {
@@ -395,21 +327,6 @@ export function getPortfolioContent(locale: Locale): PortfolioContent {
         image: item.image,
         description: t(`education.items.${item.id}.description`),
       })),
-    },
-    achievements: {
-      eyebrow: t("achievements.eyebrow"),
-      title: t("achievements.title"),
-      items: achievementIds.map((id) => ({
-        id,
-        title: t(`achievements.items.${id}.title`),
-        description: t(`achievements.items.${id}.description`),
-        badge: t(`achievements.items.${id}.badge`),
-      })),
-    },
-    philosophy: {
-      eyebrow: t("philosophy.eyebrow"),
-      title: t("philosophy.title"),
-      items: philosophyKeys.map((key) => t(key)),
     },
     contact: {
       eyebrow: t("contact.eyebrow"),

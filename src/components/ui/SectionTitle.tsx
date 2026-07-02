@@ -22,7 +22,7 @@ export function SectionTitle({ eyebrow, title, description, align = "left" }: Se
         {title}
       </h2>
       {description ? (
-        <p className="mt-5 text-lg leading-8 text-[#8ab8cc] md:text-xl">{description}</p>
+        <p className="mt-5 text-lg leading-8 text-steel md:text-xl">{description}</p>
       ) : null}
     </div>
   );
