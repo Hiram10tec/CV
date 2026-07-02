@@ -6,18 +6,17 @@
     "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "check:i18n": "node scripts/check-i18n.mjs"
   },
   "dependencies": {
-    "@gsap/react": "latest",
     "animejs": "^4.4.1",
-    "gsap": "latest",
     "lucide-react": "latest",
     "motion": "latest",
     "next": "latest",
-    "next-intl": "^4.8.3",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "use-intl": "^4.8.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "latest",

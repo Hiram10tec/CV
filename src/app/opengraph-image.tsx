@@ -32,6 +32,7 @@ export default async function OgImage() {
         {/* Background */}
         <img
           src={bgBase64}
+          alt=""
           style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
         />
 

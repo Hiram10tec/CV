@@ -24,7 +24,7 @@ export function About({ about, personalInfo }: AboutProps) {
             <SectionTitle eyebrow={about.eyebrow} title={about.title} description={about.description} />
 
             <div className="mt-8 grid gap-5 lg:grid-cols-[0.92fr_1.08fr]">
-              <TronCard className="p-7" style={{ borderRadius: "4px" }}>
+              <TronCard className="p-7 rounded-[4px]">
                 <p className="font-tron text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-cyan-400/70">
                   {about.focusLabel}
                 </p>
@@ -32,8 +32,7 @@ export function About({ about, personalInfo }: AboutProps) {
                   {about.pills.map((pill) => (
                     <span
                       key={pill}
-                      className="font-tron border border-cyan-400/20 bg-cyan-400/5 px-4 py-2 text-[0.68rem] font-medium uppercase tracking-[0.1em] text-[#cce8f5]"
-                      style={{ borderRadius: "2px" }}
+                      className="font-tron border border-cyan-400/20 bg-cyan-400/5 px-4 py-2 text-[0.68rem] font-medium uppercase tracking-[0.1em] text-frost rounded-[2px]"
                     >
                       {pill}
                     </span>
@@ -41,7 +40,7 @@ export function About({ about, personalInfo }: AboutProps) {
                 </div>
               </TronCard>
 
-              <div className="overflow-hidden border border-cyan-400/20 bg-[#000c14]" style={{ borderRadius: "4px" }}>
+              <div className="overflow-hidden border border-cyan-400/20 bg-abyss rounded-[4px]">
                 <div className="relative aspect-[4/5]">
                   <Image
                     src={personalInfo.profileImage}
@@ -50,13 +49,13 @@ export function About({ about, personalInfo }: AboutProps) {
                     sizes="(max-width: 1024px) 100vw, 30vw"
                     className="object-cover object-center"
                   />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#000c14]/60 via-transparent to-transparent" />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-abyss/60 via-transparent to-transparent" />
                 </div>
-                <div className="border-t border-cyan-400/15 bg-[#000c14]/90 p-5">
+                <div className="border-t border-cyan-400/15 bg-abyss/90 p-5">
                   <p className="font-tron text-[0.6rem] font-semibold uppercase tracking-[0.25em] text-cyan-400/70">
                     {about.imageCaptionTitle}
                   </p>
-                  <p className="mt-2 text-sm leading-7 text-[#8ab8cc]">{about.imageCaptionText}</p>
+                  <p className="mt-2 text-sm leading-7 text-steel">{about.imageCaptionText}</p>
                 </div>
               </div>
             </div>
@@ -68,15 +67,15 @@ export function About({ about, personalInfo }: AboutProps) {
             const Icon = icons[index % icons.length];
             return (
               <Reveal key={card.title} delay={index * 0.08}>
-                <TronCard scan className="h-full p-6" style={{ borderRadius: "4px" }}>
+                <TronCard scan className="h-full p-6 rounded-[4px]">
                   <div
-                    className="mb-5 inline-flex h-11 w-11 items-center justify-center border border-cyan-400/25 bg-cyan-400/8 text-cyan-300"
-                    style={{ borderRadius: "2px", boxShadow: "0 0 10px rgba(0,212,255,0.12)" }}
+                    className="mb-5 inline-flex h-11 w-11 items-center justify-center border border-cyan-400/25 bg-cyan-400/8 text-cyan-300 rounded-[2px]"
+                    style={{ boxShadow: "0 0 10px rgba(0,212,255,0.12)" }}
                   >
                     <Icon className="h-5 w-5" />
                   </div>
                   <h3 className="font-tron text-lg font-semibold text-white">{card.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-[#8ab8cc]">{card.description}</p>
+                  <p className="mt-3 text-sm leading-7 text-steel">{card.description}</p>
                 </TronCard>
               </Reveal>
             );

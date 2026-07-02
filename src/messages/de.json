@@ -5,7 +5,6 @@
   },
   "nav": {
     "about": "Profil",
-    "timeline": "Werdegang",
     "projects": "Projekte",
     "skills": "Skills",
     "education": "Ausbildung",
@@ -64,50 +63,6 @@
       }
     }
   },
-  "timeline": {
-    "eyebrow": "Werdegang",
-    "title": "Wie ich Projekte von Anforderungen bis zur Lieferung umgesetzt habe.",
-    "description": "Das sind die stärksten Projekte meines Portfolios. Dieser Bereich zeigt Verantwortlichkeiten, Prozess und technische Entscheidungen, nicht nur Endergebnisse.",
-    "stackLabel": "Stack",
-    "items": {
-      "altertex": {
-        "company": "Altertex modulares Enterprise-System",
-        "role": "Softwarearchitekt und Full-Stack-Entwickler",
-        "location": "San Luis Potosí, Mexiko",
-        "period": "Feb 2025 - Jun 2025",
-        "summary": "Ein groß angelegtes Enterprise-Management-System, umgesetzt mit CMMI-orientierten Prozessen und einem Liefermodell, das professionelle Software-Engineering-Praktiken widerspiegelte.",
-        "bullet1": "Ich entwarf die Lösung mit Hexagonaler Architektur und Clean Architecture, um Modularität und Wartbarkeit sicherzustellen.",
-        "bullet2": "Ich entwickelte Backend-Services, Datenmodelle und Frontend-Module für Benutzer, Rollen, Kategorien, Quoten und Produktabläufe.",
-        "bullet3": "Ich implementierte RBAC-Berechtigungskontrolle, 2FA, Eingabevalidierung und sicherheitsorientiertes API-Verhalten.",
-        "bullet4": "Ich arbeitete mit Swagger-dokumentierten APIs, formaler Dokumentation, strukturierten Reviews und Qualitätskontrollen im gesamten Projekt.",
-        "bullet5": "Ich übernahm früh eine Führungsrolle, um Neuabschätzungen und die Abstimmung mit dem externen Trainingspartner zu unterstützen."
-      },
-      "wushu": {
-        "company": "App der Queretaro Wushu Kung Fu Association",
-        "role": "Full-Stack-Entwickler für iOS-Auslieferung",
-        "location": "Querétaro, Mexiko",
-        "period": "Sep 2024 - Dez 2024",
-        "summary": "Ein Mobile-Projekt mit vollständigem Zyklus von Anforderungen und Architektur bis zu Implementierung, Tests und TestFlight-Deployment.",
-        "bullet1": "Ich analysierte funktionale und nicht-funktionale Anforderungen vor der Implementierung.",
-        "bullet2": "Ich entwarf die mobile Architektur mit MVVM für Skalierbarkeit und klare Verantwortlichkeiten.",
-        "bullet3": "Ich implementierte SwiftUI-Views und App-Flows mit Blick auf Nutzbarkeit und Performance.",
-        "bullet4": "Ich validierte das Produkt durch Tests und iterative Verbesserungen in einem Scrum-Workflow.",
-        "bullet5": "Ich bereitete die Anwendung für das TestFlight-Deployment vor und behielt Qualität und Sicherheit im Blick."
-      }
-    }
-  },
-  "achievements": {
-    "eyebrow": "Highlights",
-    "title": "Wichtige Meilensteine.",
-    "items": {
-      "exchange": { "title": "Internationaler Austausch", "description": "University of Twente, Niederlande — 2025–2026.", "badge": "Twente" },
-      "english": { "title": "Englisch C1", "description": "Berufliche Sprachkompetenz.", "badge": "C1" },
-      "german": { "title": "Deutsch A2", "description": "Funktionale Kommunikation, aktiv lernend.", "badge": "A2" },
-      "ios": { "title": "iOS-App auf TestFlight", "description": "Vollständiger Zyklus von Anforderungen bis TestFlight-Bereitschaft.", "badge": "iOS" },
-      "cmmi": { "title": "CMMI-Prozessniveau", "description": "Formale Softwarelebenszyklus-Praktiken in Enterprise-Projekt angewendet.", "badge": "CMMI" },
-      "architecture": { "title": "Clean + Hexagonale Architektur", "description": "In Full-Stack-Enterprise-System implementiert.", "badge": "Arch" }
-    }
-  },
   "projects": {
     "eyebrow": "Projekte",
     "title": "Ausgewählte Arbeiten und die Ergebnisse dahinter.",
@@ -121,13 +76,19 @@
         "title": "Altertex Enterprise-Plattform",
         "description": "Ein modulares Verwaltungssystem mit Fokus auf Wartbarkeit, Berechtigungskontrolle und sichere Geschäftsabläufe.",
         "result": "Geliefert wurden modulares Backend und Frontend mit RBAC, 2FA, Swagger-dokumentierten REST-APIs und formaler Testabdeckung für User-, Produkt-, Quoten- und Kategorieverwaltung.",
-        "highlight": "RBAC-Regeln, Validierungslogik und Admin-Abläufe konsistent über Module halten, ohne enges Coupling einzuführen."
+        "highlight": "RBAC-Regeln, Validierungslogik und Admin-Abläufe konsistent über Module halten, ohne enges Coupling einzuführen.",
+        "role": "Softwarearchitekt und Full-Stack-Entwickler",
+        "company": "Altertex modulares Enterprise-System",
+        "period": "Feb 2025 - Jun 2025"
       },
       "wushu": {
         "title": "Wushu iOS-App",
         "description": "Eine iOS-App vom Anforderungsanalyse über Architektur und UI bis zu Tests und TestFlight-Deployment.",
         "result": "Geliefert wurde eine SwiftUI-MVVM-App durch den vollständigen Zyklus bis TestFlight in einem 4-monatigen Sprint, mit strukturierten Tests und Scrum-Iteration.",
-        "highlight": "Anforderungen und Nutzerflüsse in eine skalierbare mobile Architektur übersetzen und die App bei jedem Sprint deployment-bereit halten."
+        "highlight": "Anforderungen und Nutzerflüsse in eine skalierbare mobile Architektur übersetzen und die App bei jedem Sprint deployment-bereit halten.",
+        "role": "Full-Stack-Entwickler für iOS-Auslieferung",
+        "company": "App der Queretaro Wushu Kung Fu Association",
+        "period": "Sep 2024 - Dez 2024"
       },
       "wc2026": {
         "title": "WM 2026 Ergebnisvorhersage",
@@ -177,14 +138,6 @@
         "description": "Fortgeschrittene Informatik-Kurse an einer der führenden technischen Universitäten der Niederlande. Stärkung von technischer Tiefe und forschungsorientiertem Denken in einem englischsprachigen, multikulturellen Umfeld."
       }
     }
-  },
-  "philosophy": {
-    "eyebrow": "Ansatz",
-    "title": "Die Prinzipien hinter meiner Arbeitsweise in der Softwareentwicklung.",
-    "item1": "Architektur soll praktisch bleiben und direkt mit der Lieferung verbunden sein.",
-    "item2": "Klarheit in Code, Interfaces und Kommunikation hat Vorrang.",
-    "item3": "Qualitätsprozesse sollen das Tempo schützen, nicht Teams ausbremsen.",
-    "item4": "Lösungen sollen auch nach dem ersten Release wartbar bleiben."
   },
   "contact": {
     "eyebrow": "Kontakt",

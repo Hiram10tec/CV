@@ -32,8 +32,8 @@ export function Hero({ copy, personalInfo, locale }: HeroProps) {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mb-6 inline-flex items-center gap-2 border border-violet-500/30 bg-violet-500/8 px-4 py-2 font-tron text-xs font-semibold uppercase tracking-[0.28em] text-violet-300"
-            style={{ borderRadius: "2px", boxShadow: "0 0 14px rgba(139,92,246,0.14)" }}
+            className="mb-6 inline-flex items-center gap-2 border border-violet-500/30 bg-violet-500/8 px-4 py-2 font-tron text-xs font-semibold uppercase tracking-[0.28em] text-violet-300 rounded-[2px]"
+            style={{ boxShadow: "0 0 14px rgba(139,92,246,0.14)" }}
           >
             <Sparkles className="h-3.5 w-3.5" />
             {copy.hero.tagline}
@@ -56,7 +56,7 @@ export function Hero({ copy, personalInfo, locale }: HeroProps) {
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.18 }}
-            className="mt-7 max-w-xl text-lg leading-8 text-[#9aaccf] md:text-xl"
+            className="mt-7 max-w-xl text-lg leading-8 text-mist md:text-xl"
           >
             {copy.hero.subtitle}
           </motion.p>
@@ -68,8 +68,7 @@ export function Hero({ copy, personalInfo, locale }: HeroProps) {
             className="mt-6 flex flex-wrap items-center gap-3"
           >
             <span
-              className="inline-flex items-center gap-2 border border-violet-500/20 bg-violet-500/5 px-4 py-2 font-tron text-[0.68rem] uppercase tracking-[0.15em] text-violet-300/80"
-              style={{ borderRadius: "2px" }}
+              className="inline-flex items-center gap-2 border border-violet-500/20 bg-violet-500/5 px-4 py-2 font-tron text-[0.68rem] uppercase tracking-[0.15em] text-violet-300/80 rounded-[2px]"
             >
               <MapPin className="h-3 w-3 text-violet-400" />
               {copy.hero.location}
@@ -85,9 +84,8 @@ export function Hero({ copy, personalInfo, locale }: HeroProps) {
           >
             <a
               href={localizedHref(locale, "#projects")}
-              className="font-tron border border-violet-500 bg-violet-500/12 px-7 py-3.5 text-center text-xs font-semibold uppercase tracking-[0.2em] text-violet-300 transition hover:bg-violet-500/22"
+              className="font-tron rounded-[2px] border border-violet-500 bg-violet-500/12 px-7 py-3.5 text-center text-xs font-semibold uppercase tracking-[0.2em] text-violet-300 transition hover:bg-violet-500/22"
               style={{
-                borderRadius: "2px",
                 boxShadow: "0 0 18px rgba(139,92,246,0.28), inset 0 0 12px rgba(139,92,246,0.06)",
               }}
             >
@@ -96,16 +94,14 @@ export function Hero({ copy, personalInfo, locale }: HeroProps) {
             <a
               href={personalInfo.cvPath}
               download="CV-Hiram-Mendoza.pdf"
-              className="font-tron inline-flex items-center justify-center gap-2 border border-cyan-500/30 bg-transparent px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300 transition hover:border-cyan-400/60 hover:bg-cyan-500/8"
-              style={{ borderRadius: "2px" }}
+              className="font-tron inline-flex items-center justify-center gap-2 border border-cyan-500/30 bg-transparent px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300 transition hover:border-cyan-400/60 hover:bg-cyan-500/8 rounded-[2px]"
             >
               <Download className="h-3.5 w-3.5" />
               {copy.hero.openCv}
             </a>
             <a
               href={localizedHref(locale, "#contact")}
-              className="font-tron border border-white/10 bg-white/2 px-7 py-3.5 text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#8ab8cc] transition hover:border-violet-500/25 hover:text-violet-300"
-              style={{ borderRadius: "2px" }}
+              className="font-tron border border-white/10 bg-white/2 px-7 py-3.5 text-center text-xs font-semibold uppercase tracking-[0.2em] text-steel transition hover:border-violet-500/25 hover:text-violet-300 rounded-[2px]"
             >
               {copy.hero.contactMe}
             </a>
@@ -121,8 +117,7 @@ export function Hero({ copy, personalInfo, locale }: HeroProps) {
             {copy.stats.map((stat) => (
               <div
                 key={stat.label}
-                className="border border-violet-500/15 bg-violet-500/4 p-3 text-center transition hover:border-violet-500/30"
-                style={{ borderRadius: "3px" }}
+                className="border border-violet-500/15 bg-violet-500/4 p-3 text-center transition hover:border-violet-500/30 rounded-[3px]"
               >
                 <p
                   className="font-tron text-xl font-semibold text-violet-300 md:text-2xl"
@@ -130,7 +125,7 @@ export function Hero({ copy, personalInfo, locale }: HeroProps) {
                 >
                   {stat.value}
                 </p>
-                <p className="mt-1 text-[0.65rem] leading-5 text-[#7a8eaa]">{stat.label}</p>
+                <p className="mt-1 text-[0.65rem] leading-5 text-haze">{stat.label}</p>
               </div>
             ))}
           </motion.div>
@@ -209,8 +204,8 @@ export function Hero({ copy, personalInfo, locale }: HeroProps) {
 
             {/* Name badge */}
             <div
-              className="absolute -bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap border border-violet-500/32 bg-[var(--bg)]/90 px-5 py-2 font-tron text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-violet-300 backdrop-blur-sm"
-              style={{ borderRadius: "2px", boxShadow: "0 0 14px rgba(139,92,246,0.18)" }}
+              className="absolute -bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap border border-violet-500/32 bg-[var(--bg)]/90 px-5 py-2 font-tron text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-violet-300 backdrop-blur-sm rounded-[2px]"
+              style={{ boxShadow: "0 0 14px rgba(139,92,246,0.18)" }}
             >
               {personalInfo.name}
             </div>
@@ -218,11 +213,10 @@ export function Hero({ copy, personalInfo, locale }: HeroProps) {
 
           {/* Quick-note card */}
           <div
-            className="absolute -right-4 bottom-2 max-w-[190px] border border-violet-500/18 bg-[var(--bg-soft)]/90 p-3.5 backdrop-blur-sm"
-            style={{ borderRadius: "3px" }}
+            className="absolute -right-4 bottom-2 max-w-[190px] border border-violet-500/18 bg-[var(--bg-soft)]/90 p-3.5 backdrop-blur-sm rounded-[3px]"
           >
-            <span className="font-tron text-[0.52rem] uppercase tracking-[0.2em] text-violet-400/55">// note</span>
-            <p className="mt-1.5 text-[0.7rem] leading-5 text-[#9aaccf]">{copy.hero.quickNote}</p>
+            <span className="font-tron text-[0.52rem] uppercase tracking-[0.2em] text-violet-400/55">{"// note"}</span>
+            <p className="mt-1.5 text-[0.7rem] leading-5 text-mist">{copy.hero.quickNote}</p>
           </div>
         </motion.div>
       </div>
